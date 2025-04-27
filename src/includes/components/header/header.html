@@ -5,7 +5,7 @@
       style="border: 1px solid black; padding-left: 0px">
       <!-- Logo -->
       <a href="#" class="navbar-brand">
-        <img src="{{ site.assetPath }}/assets/images/logo/Vertis_Logo.svg" alt="Vertis Logo" style="height: 40px" />
+        <img src="/assets/images/logo/Vertis_Logo.svg" alt="Vertis Logo" style="height: 40px" />
       </a>
 
       <!-- Navbar Toggler for Mobile -->
@@ -13,11 +13,11 @@
         <button id="navbar-toggler" class="navbar-toggler border-start border-right" type="button"
           data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
-          <img id="navbar-toggler-icon" src="{{ site.assetPath }}/assets/images/Hamburger.svg" alt="Menu" width="30" height="30" />
+          <img id="navbar-toggler-icon" src="/assets/images/Hamburger.svg" alt="Menu" width="30" height="30" />
         </button>
         <!-- Get in Touch Icon -->
-        <a href="#" class="nav-link me-2 border-start" style="background-color: #28a745; padding: 10px 12px">
-          <img src="{{ site.assetPath }}/assets/images/Message.svg" alt="Message" width="30" height="30" />
+        <a href="#" class="nav-link me-2 border-start" style="background-color: #1ce783; padding: 10px 12px">
+          <img src="/assets/images/Message.svg" alt="Message" width="30" height="30" />
         </a>
       </div>
 
@@ -31,7 +31,7 @@
           <li class="nav-item dropdown position-static">
             <a href="#" class="nav-link" id="vertisGroupDropdown" data-bs-toggle="dropdown" aria-expanded="false">
               VERTIS GROUP
-              <img src="{{ site.assetPath }}/assets/images/icons/24/Accordion-down.svg" alt="Dropdown Icon" id="dropdownIcon"
+              <img src="/assets/images/icons/24/Accordion-down.svg" alt="Dropdown Icon" id="dropdownIcon"
                 class="dropdown-icon" />
             </a>
 
@@ -91,13 +91,13 @@
       let dropdownMenu = dropdown.nextElementSibling;
 
       dropdown.parentElement.addEventListener("mouseenter", function () {
-        dropdownIcon.src = "{{ site.assetPath }}/assets/images/icons/24/Accordion-up.svg";
+        dropdownIcon.src = "/assets/images/icons/24/Accordion-up.svg";
         dropdownMenu.classList.add("show");
         dropdown.setAttribute("aria-expanded", "true");
       });
 
       dropdown.parentElement.addEventListener("mouseleave", function () {
-        dropdownIcon.src = "{{ site.assetPath }}/assets/images/icons/24/Accordion-down.svg";
+        dropdownIcon.src = "/assets/images/icons/24/Accordion-down.svg";
         dropdownMenu.classList.remove("show");
         dropdown.setAttribute("aria-expanded", "false");
       });

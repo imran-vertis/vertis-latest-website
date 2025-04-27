@@ -40,6 +40,7 @@
     }
 }
 
+
 /* Why vertis section */
 .why-vertis {
     background-color: #242424;
@@ -189,7 +190,7 @@
     color: #aaa;
 }
 
-.d-flex {
+.job-card .d-flex {
     margin-top: 10px;
 }
 
@@ -284,7 +285,8 @@
     margin-bottom: 20px;
 }
 
-.explore-jobs , .email-us-section {
+.explore-jobs,
+.email-us-section {
     .apply-now-btn {
         border-radius: 50px;
         padding: 10px 5px 10px 20px;
@@ -369,19 +371,21 @@
     box-shadow: 0 0 5px rgba(0, 255, 135, 0.5);
 }
 
-.pagination-custom {
+.explore-jobs .pagination-custom {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 475px;
-    margin-right: 475px;
+    // margin-left: 475px;
+    // margin-right: 475px;
     background-color: #f4f4f4;
     border-radius: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin: 0 auto;
+    width: fit-content;
 }
 
-.pagination-custom button {
+.explore-jobs .pagination-custom button {
     border: none;
     background-color: transparent;
     font-size: 1.2rem;
@@ -389,7 +393,7 @@
     padding: 10px;
 }
 
-.pagination-custom .pagination-arrow {
+.explore-jobs .pagination-custom .pagination-arrow {
     color: #6c757d;
     font-size: 1.0rem;
     background-color: #ffffff;
@@ -398,7 +402,7 @@
     height: 50px;
 }
 
-.pagination-custom .pagination-page {
+.explore-jobs .pagination-custom .pagination-page {
     margin: 0 5px;
     border: none;
     background-color: transparent;
@@ -408,7 +412,7 @@
     cursor: pointer;
 }
 
-.pagination-custom .active-page {
+.explore-jobs .pagination-custom .active-page {
     background-color: #1CE783;
     border-radius: 50%;
     width: 40px;
@@ -428,45 +432,45 @@
 
 /* Responsive styles for tablets and mobile devices */
 @media (max-width: 768px) {
-    .pagination-custom {
+    .explore-jobs .pagination-custom {
         margin-left: 100px;
         margin-right: 100px;
         padding-top: 8px;
         padding-bottom: 8px;
     }
 
-    .pagination-custom .pagination-arrow,
-    .pagination-custom .active-page {
+    .explore-jobs .pagination-custom .pagination-arrow,
+    .explore-jobs .pagination-custom .active-page {
         width: 40px;
         height: 40px;
         font-size: 12px;
     }
 
-    .pagination-custom button {
+    .explore-jobs .pagination-custom button {
         font-size: 1rem;
     }
 
-    .pagination-custom .pagination-page {
+    .explore-jobs .pagination-custom .pagination-page {
         font-size: 0.85rem;
     }
 }
 
 @media (max-width: 576px) {
-    .pagination-custom {
+    .explore-jobs .pagination-custom {
         margin-left: 20px;
         margin-right: 20px;
         padding-top: 6px;
         padding-bottom: 6px;
     }
 
-    .pagination-custom .pagination-arrow,
-    .pagination-custom .active-page {
+    .explore-jobs .pagination-custom .pagination-arrow,
+    .explore-jobs .pagination-custom .active-page {
         width: 35px;
         height: 35px;
         font-size: 10px;
     }
 
-    .pagination-custom button {
+    .explore-jobs .pagination-custom button {
         font-size: 0.9rem;
     }
 
@@ -543,122 +547,128 @@
 
 #faqAccordion {
     .accordion-button {
-            background-color: transparent;
-            color: white;
-            border: none;
-            position: relative;
-            padding-right: 2.5rem;
-        }
-    
-        .accordion-icon {
-            position: absolute;
-            right: 1.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 24px;
-            height: 24px;
-        }
-    
-        /* Show plus icon when collapsed */
-        .accordion-button.collapsed .accordion-plus-icon {
-            display: inline;
-        }
-    
-        /* Hide minus icon when collapsed */
-        .accordion-button.collapsed .accordion-minus-icon {
-            display: none;
-        }
-    
-        /* Hide plus icon when expanded */
-        .accordion-button:not(.collapsed) .accordion-plus-icon {
-            display: none;
-        }
-    
-        /* Show minus icon when expanded */
-        .accordion-button:not(.collapsed) .accordion-minus-icon {
-            display: inline;
-        }
-    
-        .accordion-button:focus {
-            box-shadow: none;
-        }
-    
-        .accordion-button.collapsed::after {
-            filter: invert(100%);
-        }
-    
-        .accordion-item {
-            background-color: transparent;
-            border: none;
-        }
-    
-        .accordion-body {
-            color: #7e7e7e;
-        }
-    
-        hr {
-            border-color: #a7a7a7;
-        }
-    
-        .accordion-button:not(.collapsed) {
-            color: #ffffff;
-            background-color: #cfe2ff00;
-            box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
-        }
-    
-        .accordion-button::after {
-            display: none;
-        }
-    
-        /* Custom icon on the right corner */
-        .accordion-button {
-            position: relative;
-            padding-right: 2.5rem;
-        }
-    
-        /* Add "+" icon when accordion is collapsed */
-        .accordion-button.collapsed::before {
-            content: '';
-            // background-image: url('assets/icons/24/Plus.svg');
-            background-image: url('../../assets/images/icons/24/Plus.svg');
-            background-size: 24px 24px;
-            width: 24px;
-            height: 24px;
-            position: absolute;
-            right: 1.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #1CE783;
-        }
-    
-        /* Add "-" icon when accordion is expanded */
-        .accordion-button:not(.collapsed)::before {
-            content: '';
-            // background-image: url('assets/icons/24/Minus.svg');
-            background-image: url('../../assets/images/icons/24/Minus.svg');
-            background-size: 24px 24px;
-            width: 24px;
-            height: 24px;
-            position: absolute;
-            right: 1.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #1CE783;
-        }
-    
-        .accordion-button.collapsed .accordion-icon {
-            filter: brightness(0) saturate(100%) invert(40%) sepia(95%) saturate(652%) hue-rotate(109deg) brightness(102%) contrast(101%);
-        }
-    
-        /* For expanded accordion button with minus icon */
-        .accordion-button:not(.collapsed) .accordion-icon {
-            filter: brightness(0) saturate(100%) invert(40%) sepia(95%) saturate(652%) hue-rotate(109deg) brightness(102%) contrast(101%);
-        }
-    
-        .muted-text {
-            color: #7e7e7e;
-            font-weight: normal;
-            font-size: 0.9rem;
-        }
+        background-color: transparent;
+        color: white;
+        border: none;
+        position: relative;
+        padding-right: 2.5rem;
+    }
+
+    .accordion-icon {
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Show plus icon when collapsed */
+    .accordion-button.collapsed .accordion-plus-icon {
+        display: inline;
+    }
+
+    /* Hide minus icon when collapsed */
+    .accordion-button.collapsed .accordion-minus-icon {
+        display: none;
+    }
+
+    /* Hide plus icon when expanded */
+    .accordion-button:not(.collapsed) .accordion-plus-icon {
+        display: none;
+    }
+
+    /* Show minus icon when expanded */
+    .accordion-button:not(.collapsed) .accordion-minus-icon {
+        display: inline;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+
+    .accordion-button.collapsed::after {
+        filter: invert(100%);
+    }
+
+    .accordion-item {
+        background-color: transparent;
+        border: none;
+    }
+
+    .accordion-body {
+        color: #7e7e7e;
+    }
+
+    hr {
+        border-color: #a7a7a7;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: #ffffff;
+        background-color: #cfe2ff00;
+        box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    }
+
+    .accordion-button::after {
+        display: none;
+    }
+
+    /* Custom icon on the right corner */
+    .accordion-button {
+        position: relative;
+        padding-right: 2.5rem;
+    }
+
+    /* Add "+" icon when accordion is collapsed */
+    .accordion-button.collapsed::before {
+        content: '';
+        // background-image: url('assets/icons/24/Plus.svg');
+        background-image: url('../../assets/images/icons/24/Plus.svg');
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #1CE783;
+    }
+
+    /* Add "-" icon when accordion is expanded */
+    .accordion-button:not(.collapsed)::before {
+        content: '';
+        // background-image: url('assets/icons/24/Minus.svg');
+        background-image: url('../../assets/images/icons/24/Minus.svg');
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #1CE783;
+    }
+
+    .accordion-button.collapsed .accordion-icon {
+        filter: brightness(0) saturate(100%) invert(40%) sepia(95%) saturate(652%) hue-rotate(109deg) brightness(102%) contrast(101%);
+    }
+
+    /* For expanded accordion button with minus icon */
+    .accordion-button:not(.collapsed) .accordion-icon {
+        filter: brightness(0) saturate(100%) invert(40%) sepia(95%) saturate(652%) hue-rotate(109deg) brightness(102%) contrast(101%);
+    }
+
+    .muted-text {
+        color: #7e7e7e;
+        font-weight: normal;
+        font-size: 0.9rem;
+    }
 }
 
+@media (min-width: 768px) and (max-width: 1100px) {
+    .faq-header {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}

@@ -82,6 +82,11 @@
     flex-direction: row;
 }
 
+.our-people-section .row.d-none.d-xl-flex .people-card {
+    width: 100%;
+    height: 100%;
+}
+
 .our-people-section .people-card .card-body {
     width: 100%;
 }
@@ -108,21 +113,24 @@
     padding-bottom: 30px;
 }
 
-.card-title{
+.card-title {
     color: var(--colours-text-text-primary-900, #242424);
     font-family: var(--font-family-title, "BricolageGrotesque");
     font-size: var(--font-size-H5, 24px);
     font-style: normal;
     font-weight: 400;
-    line-height: var(--font-line-height-H5, 32px); /* 133.333% */
+    line-height: var(--font-line-height-H5, 32px);
+    /* 133.333% */
 }
+
 .card-text {
     color: var(--colours-text-text-primary-900, #242424);
     font-family: var(--font-family-body, inter);
     font-size: var(--font-size-P1, 16px);
     font-style: normal;
     font-weight: 400;
-    line-height: var(--font-line-height-P1, 24px); /* 150% */
+    line-height: var(--font-line-height-P1, 24px);
+    /* 150% */
     letter-spacing: 0.32px;
 }
 
@@ -132,7 +140,8 @@
     font-size: var(--font-size-H6, 20px);
     font-style: normal;
     font-weight: 400;
-    line-height: var(--font-line-height-H6, 28px); /* 140% */
+    line-height: var(--font-line-height-H6, 28px);
+    /* 140% */
     letter-spacing: 0.8px;
 }
 
@@ -146,7 +155,7 @@
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
 .swiper-slide {
     text-align: center;
@@ -155,23 +164,23 @@
     justify-content: center;
     align-items: center;
     min-width: 315px;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     width: 80%;
-  }
+}
 
-  .swiper-slide:nth-child(2n) {
+.swiper-slide:nth-child(2n) {
     width: 60%;
-  }
+}
 
-  .swiper-slide:nth-child(3n) {
+.swiper-slide:nth-child(3n) {
     width: 40%;
-  }
+}

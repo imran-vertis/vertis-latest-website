@@ -19,8 +19,12 @@ const globalSiteData = {
   locale: 'en',
   baseUrl: baseUrl,
   pathPrefix: pathPrefix,
-  assetPath: process.env.NODE_ENV === 'production' ? './' : '/_site',
+  // assetPath: process.env.NODE_ENV === 'production' ? './' : '/_site',
+  assetPath: ''
 }
+
+console.log('assetPath is set to ...', globalSiteData.assetPath);
+
 
 // https://www.11ty.dev/docs/plugins/image/#use-this-in-your-templates
 const Image = require("@11ty/eleventy-img");
