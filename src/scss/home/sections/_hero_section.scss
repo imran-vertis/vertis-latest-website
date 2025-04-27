@@ -1,0 +1,74 @@
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .hero-content h1 {
+        color: var(--Colours-Text-text-white, #FFF);
+        text-align: center;
+
+        /* Display 3/Regular */
+        font-size: var(--font-size-D3, 48px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-D3, 60px);
+        /* 125% */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-content h1 {
+        color: var(--Colours-Text-text-white, #FFF);
+        text-align: center;
+
+        /* Display 2/Regular */
+        font-size: var(--font-size-D2, 64px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-D2, 80px);
+        /* 125% */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    .hero-content h1 {
+        color: var(--Colours-Text-text-white, #FFF);
+        text-align: center;
+
+        /* Display 1/Regular */
+        font-size: var(--font-size-D1, 96px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-D1, 116px);
+        /* 120.833% */
+    }
+}
+
+.hero-section {
+    display: flex;
+    padding: var(--spacing-14, 120px) var(--spacing-11, 60px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(115.75% 149.81% at 100% -74.49%, #1CE783 0%, #003534 100%);
+}
+
+.hero-content {
+    display: flex;
+    padding: 0px var(--spacing-9, 40px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+
+.highlighted-text {
+    display: inline-block;
+    padding: var(--spacing-6, 24px) var(--spacing-11, 60px);
+    border-radius: 100px;
+    border: 3px solid var(--Colours-Border-border-brand, #1CE783);
+    color: #1ce783;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s, color 0.3s;
+}

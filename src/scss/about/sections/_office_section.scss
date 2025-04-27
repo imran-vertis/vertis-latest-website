@@ -1,0 +1,98 @@
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .office-section {
+        display: flex;
+        padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
+        flex-direction: column;
+        align-items: flex-end;
+        gap: var(--spacing-0, 0px);
+        background: var(--Colours-Background-bg-secondary, #F0F0F0);
+    }
+
+    .office-description {
+        color: var(--colours-text-text-primary-900, #242424);
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-H4, 28px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-H4, 36px);
+        /* 128.571% */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    .office-section {
+        display: flex;
+        padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
+        flex-direction: column;
+        align-items: flex-end;
+        gap: var(--spacing-0, 0px);
+        background: var(--Colours-Background-bg-secondary, #F0F0F0);
+    }
+
+    .office-description {
+        color: var(--colours-text-text-primary-900, #242424);
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-H3, 32px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-H3, 40px);
+        /* 125% */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    .office-section {
+        display: flex;
+        padding: var(--spacing-12, 80px) var(--spacing-11, 60px);
+        flex-direction: column;
+        align-items: flex-end;
+        gap: var(--spacing-0, 0px);
+        background: var(--Colours-Background-bg-secondary, #F0F0F0);
+    }
+
+    .office-description {
+        color: var(--colours-text-text-primary-900, #242424);
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-H2, 36px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-H2, 44px);
+    }
+}
+
+.office-country {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bold;
+}
+
+
+.office-address {
+    color: var(--colours-text-text-secondary-600, #797979);
+font-family: var(--font-family-body, inter);
+font-size: var(--font-size-P1, 16px);
+font-style: normal;
+font-weight: 400;
+line-height: var(--font-line-height-P1, 24px); /* 150% */
+letter-spacing: 0.32px;
+}
+
+.office-country {
+    color: var(--colours-text-text-primary-900, #242424);
+    font-family: var(--font-family-title, "BricolageGrotesque");
+    font-size: var(--font-size-H5, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-H5, 32px);
+    /* 133.333% */
+}
+
+.divider {
+    border-top: 1px solid var(--Colours-Border-border-secondary, #C1C1C1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

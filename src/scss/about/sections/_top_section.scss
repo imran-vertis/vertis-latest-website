@@ -1,0 +1,78 @@
+  /* Top Section */
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+      .header-section h2 {
+        color: var(--Colours-Text-text-white, #FFF);
+
+        /* Display 3/Regular */
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-D3, 48px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-D3, 60px); /* 125% */
+      }
+
+      .top-section {
+          display: flex;
+          padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
+          flex-direction: column;
+          align-items: flex-end;
+          gap: var(--spacing-12, 80px);
+          align-self: stretch;
+          background: var(--Colours-Background-bg-tertiary, #242424);
+      }
+  }
+
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 991px) {
+      .header-section h2 {
+        color: var(--Colours-Text-text-white, #FFF);
+
+        /* Display 2/Regular */
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-D2, 64px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-D2, 80px); /* 125% */
+      }
+
+      .top-section {
+          display: flex;
+          padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
+          flex-direction: column;
+          align-items: flex-end;
+          gap: var(--spacing-12, 80px);
+          align-self: stretch;
+          background: var(--Colours-Background-bg-tertiary, #242424);
+      }
+  }
+
+  /* Desktop Styles */
+  @media (min-width: 992px) {
+      .header-section h2 {
+          color: var(--Colours-Text-text-white, #FFF);
+          /* Display 1/Regular */
+          font-family: var(--font-family-title, "BricolageGrotesque");
+          font-size: var(--font-size-D1, 96px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: var(--font-line-height-D1, 116px);
+          padding-bottom: 80px;
+      }
+
+      .top-section {
+          display: flex;
+          padding: var(--spacing-12, 80px) var(--spacing-11, 60px);
+          flex-direction: column;
+          align-items: flex-end;
+          gap: var(--spacing-12, 80px);
+          align-self: stretch;
+          background: var(--Colours-Background-bg-tertiary, #242424);
+      }
+  }
+
+  .banner-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }

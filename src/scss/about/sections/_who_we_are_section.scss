@@ -1,0 +1,68 @@
+ /* Our Values */
+
+ /* Mobile Styles */
+ @media (max-width: 767px) {
+     .who-we-are-section {
+         display: flex;
+         padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
+         flex-direction: column;
+         align-items: flex-end;
+         gap: var(--spacing-12, 80px);
+     }
+ }
+
+ /* Tablet Styles */
+ @media (min-width: 768px) and (max-width: 991px) {
+     .who-we-are-section {
+         display: flex;
+         padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
+         flex-direction: column;
+         align-items: flex-end;
+         gap: var(--spacing-12, 80px);
+     }
+ }
+
+ /* Desktop Styles */
+ @media (min-width: 992px) {
+     .who-we-are-section {
+         display: flex;
+         padding: var(--spacing-12, 80px) var(--spacing-11, 60px);
+         flex-direction: column;
+         align-items: flex-end;
+         gap: var(--spacing-12, 80px);
+         background: var(--Colours-Background-bg-primary, #FFF);
+     }
+
+
+ }
+
+ .heading-black {
+     color: var(--colours-text-text-primary-900, #242424);
+     font-family: var(--font-family-title, "BricolageGrotesque");
+     font-size: var(--font-size-H2, 36px);
+     font-style: normal;
+     font-weight: 600;
+     line-height: var(--font-line-height-H2, 44px);
+ }
+
+ .heading-number {
+     color: var(--colours-text-text-secondary-600, #A2A2A2);
+     font-family: var(--font-family-body, inter);
+     font-size: var(--font-size-P1, 16px);
+     font-style: normal;
+     font-weight: 400;
+     line-height: var(--font-line-height-P1, 24px);
+
+     letter-spacing: 0.32px;
+ }
+
+ .lead-description {
+     color: var(--colours-text-text-primary-900, #242424);
+     font-family: var(--font-family-body, inter);
+     font-size: var(--font-size-P1, 16px);
+     font-style: normal;
+     font-weight: 400;
+     line-height: var(--font-line-height-P1, 24px);
+     /* 150% */
+     letter-spacing: 0.32px;
+ }

@@ -1,0 +1,11 @@
+// Variable overrides, e.g.
+
+// fonts
+
+$default-font-family: "BricolageGrotesque", sans-serif;
+$body-font-family: "Inter", sans-serif;
+
+:root {
+    --font-family-title: #{$default-font-family};
+    --font-family-body: #{$body-font-family};
+}

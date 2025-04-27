@@ -1,0 +1,157 @@
+ /* News Section */
+ /* Mobile Styles */
+ @media (max-width: 767px) {
+     .news-section {
+         display: flex;
+         padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
+         flex-direction: column;
+         align-items: flex-end;
+         gap: var(--spacing-12, 80px);
+     }
+
+     .news-description {
+         color: var(--colours-text-text-primary-900, #242424);
+         font-family: var(--font-family-title, "BricolageGrotesque");
+         font-size: var(--font-size-H4, 28px);
+         font-style: normal;
+         font-weight: 400;
+         line-height: var(--font-line-height-H4, 36px);
+         /* 128.571% */
+     }
+     .news-title-text {
+        color: var(--colours-text-text-primary-900, #242424);
+
+        /* Heading 5/Regular */
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-H5, 24px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-H5, 32px); /* 133.333% */
+         display: -webkit-box;
+         -webkit-line-clamp: 2;
+         /* Limit to 2 lines */
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         white-space: normal;
+     }
+ }
+
+ /* Tablet Styles */
+ @media (min-width: 768px) and (max-width: 991px) {
+     .news-section {
+         display: flex;
+         padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
+         flex-direction: column;
+         align-items: flex-end;
+         gap: var(--spacing-12, 80px);
+     }
+
+     .news-description {
+         color: var(--colours-text-text-primary-900, #242424);
+         font-family: var(--font-family-title, "BricolageGrotesque");
+         font-size: var(--font-size-H3, 32px);
+         font-style: normal;
+         font-weight: 400;
+         line-height: var(--font-line-height-H3, 40px);
+         /* 125% */
+     }
+ }
+
+ /* Desktop Styles */
+ @media (min-width: 992px) {
+     .news-section {
+         display: flex;
+         padding: var(--spacing-12, 80px) var(--spacing-11, 60px);
+         flex-direction: column;
+         align-items: flex-end;
+         gap: var(--spacing-12, 80px);
+     }
+
+     .news-description {
+         color: var(--colours-text-text-primary-900, #242424);
+         font-family: var(--font-family-title, "BricolageGrotesque");
+         font-size: var(--font-size-H2, 36px);
+         font-style: normal;
+         font-weight: 400;
+         line-height: var(--font-line-height-H2, 44px);
+         /* 122.222% */
+     }
+ }
+
+
+ .news-title {
+     font-size: 14px;
+     text-transform: uppercase;
+     color: gray;
+     font-weight: bold;
+ }
+
+ .news-heading {
+     font-size: 28px;
+     font-weight: 400;
+ }
+
+ .news-item {
+     padding: 20px;
+ }
+
+ .news-date {
+    color: var(--colours-text-text-secondary-600, #797979);
+    font-family: var(--font-family-body, 'Inter');
+    font-size: var(--font-size-P2, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-P2, 20px); /* 142.857% */
+ }
+
+ .news-title-text {
+    color: var(--colours-text-text-primary-900, #242424);
+    font-family: var(--font-family-title, "BricolageGrotesque");
+    font-size: var(--font-size-H4, 28px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-H4, 36px); /* 128.571% */
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     /* Limit to 2 lines */
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: normal;
+ }
+
+ .news-column {
+     height: 250px;
+     overflow: hidden;
+ }
+
+ .news-divider {
+     border-top: 1px solid lightgray;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+
+ @media (max-width: 991px) {
+     .news-column .news-divider.mt-5 {
+         display: none;
+     }
+ }
+
+ .learn-more {
+    color: var(--colours-text-text-primary-900, #242424);
+
+    /* Heading 6/Regular */
+    font-family: var(--font-family-title, "BricolageGrotesque");
+    font-size: var(--font-size-H6, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-H6, 28px); /* 140% */
+    letter-spacing: 0.8px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+ }

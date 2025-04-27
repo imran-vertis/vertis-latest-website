@@ -1,0 +1,27 @@
+//@import url("../assets/font/stylesheet.css");
+@import "./_font";
+@import "./my_variables";
+@import "./_common";
+
+// @import "forms";
+
+// @import "header";
+@import "./header";
+@import "./footer";
+@import "./contact";
+ @import"./testimonials/testimonials";
+
+ @import "./home/home";
+ @import "./about/about";
+@import "./career/_career";
+ 
+
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "PF Handbook Pro";
+  color: #191919;
+  background: #FFF;
+}
+

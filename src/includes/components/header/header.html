@@ -1,0 +1,110 @@
+<!-- Navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg" style="background-color: white">
+    <div class="container-fluid d-flex align-items-center justify-content-between"
+      style="border: 1px solid black; padding-left: 0px">
+      <!-- Logo -->
+      <a href="#" class="navbar-brand">
+        <img src="{{ site.assetPath }}/assets/images/logo/Vertis_Logo.svg" alt="Vertis Logo" style="height: 40px" />
+      </a>
+
+      <!-- Navbar Toggler for Mobile -->
+      <div class="d-lg-none d-flex ms-auto align-items-center">
+        <button id="navbar-toggler" class="navbar-toggler border-start border-right" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <img id="navbar-toggler-icon" src="{{ site.assetPath }}/assets/images/Hamburger.svg" alt="Menu" width="30" height="30" />
+        </button>
+        <!-- Get in Touch Icon -->
+        <a href="#" class="nav-link me-2 border-start" style="background-color: #28a745; padding: 10px 12px">
+          <img src="{{ site.assetPath }}/assets/images/Message.svg" alt="Message" width="30" height="30" />
+        </a>
+      </div>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse border-start-nav" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">WORKS</a></li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown position-static">
+            <a href="#" class="nav-link" id="vertisGroupDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              VERTIS GROUP
+              <img src="{{ site.assetPath }}/assets/images/icons/24/Accordion-down.svg" alt="Dropdown Icon" id="dropdownIcon"
+                class="dropdown-icon" />
+            </a>
+
+            <div class="dropdown-menu full-width-dropdown" aria-labelledby="vertisGroupDropdown">
+              <div class="dropdown-content">
+                <div class="dropdown-column">
+                  <h6><a href="#">Vertis Experience</a></h6>
+                  <a href="#" class="dropdown-column-sublinks">Service 1</a>
+                  <a href="#" class="dropdown-column-sublinks">Service 2</a>
+                  <a href="#" class="dropdown-column-sublinks">Service 3</a>
+                </div>
+                <div class="dropdown-column">
+                  <h6><a href="#">Vertis Technology</a></h6>
+                  <a href="#" class="dropdown-column-sublinks">Service 4</a>
+                  <a href="#" class="dropdown-column-sublinks">Service 5</a>
+                  <a href="#" class="dropdown-column-sublinks">Service 6</a>
+                </div>
+                <div class="dropdown-column">
+                  <h6><a href="#">Vertis Solutions</a></h6>
+                  <a href="#" class="dropdown-column-sublinks">Service 10</a>
+                  <a href="#" class="dropdown-column-sublinks">Service 11</a>
+                  <a href="#" class="dropdown-column-sublinks">Service 12</a>
+                </div>
+                <div class="dropdown-column">
+                  <h6><a href="#">Vertis Ventures</a></h6>
+                  <a href="#" class="dropdown-column-sublinks">Service 10</a>
+                  <a href="#" class="dropdown-column-sublinks">Service 11</a>
+                  <a href="#" class="dropdown-column-sublinks">Service 12</a>
+                </div>
+              </div>
+              <div class="dropdown-footer">
+                <a href="#" class="btn btn-success">View All Services</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="#" class="nav-link">NEWS</a></li>
+          <li class="nav-item careers-link border-start-nav">
+            <a href="#" class="nav-link pl-3">CAREERS</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Get in Touch Button -->
+      <ul class="navbar-nav d-none d-lg-flex ms-auto">
+        <li class="nav-item border-start ms-3" style="background-color: #1ce783">
+          <a href="#" class="nav-link">GET IN TOUCH</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let dropdown = document.getElementById("vertisGroupDropdown");
+      let dropdownIcon = document.getElementById("dropdownIcon");
+      let dropdownMenu = dropdown.nextElementSibling;
+
+      dropdown.parentElement.addEventListener("mouseenter", function () {
+        dropdownIcon.src = "{{ site.assetPath }}/assets/images/icons/24/Accordion-up.svg";
+        dropdownMenu.classList.add("show");
+        dropdown.setAttribute("aria-expanded", "true");
+      });
+
+      dropdown.parentElement.addEventListener("mouseleave", function () {
+        dropdownIcon.src = "{{ site.assetPath }}/assets/images/icons/24/Accordion-down.svg";
+        dropdownMenu.classList.remove("show");
+        dropdown.setAttribute("aria-expanded", "false");
+      });
+
+      dropdown.addEventListener("click", function () {
+        window.location.href = "your-link.html"; // Navigate on second click
+      });
+    });
+  </script>
+</header>

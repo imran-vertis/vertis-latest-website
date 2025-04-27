@@ -1,0 +1,503 @@
+body {
+   font-family: 'BricolageGrotesque', sans-serif;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   overscroll-behavior: none;
+ }
+
+
+ h5 {
+  font-family: 'Inter', sans-serif;
+ }
+
+ h6 {
+  font-family: 'Inter', sans-serif;
+   font-size: 20px;
+ }
+
+ h1,
+ h3,
+ h4 {
+   font-family: 'BricolageGrotesque', sans-serif;
+ }
+
+ h2 {
+   font-family: 'BricolageGrotesque', sans-serif;
+   font-size: 36px;
+   font-weight: 400;
+ }
+
+ /* Mobile Styles */
+ @media (max-width: 767px) {
+   .green-button {
+     background: var(--Buttons-Secondary-button-secondary-bg, #1CE783);
+     border: 1px solid var(--Buttons-Secondary-button-secondary-border, #242424);
+     color: black;
+     padding: 9px 15px;
+     gap: 8px;
+     font-size: var(--font-size-H6, 20px);
+     border-radius: 100px;
+     transition: 0.3s;
+     display: inline-block;
+     text-decoration: none;
+   }
+
+   .white-transparent-button {
+     position: absolute;
+     bottom: 50px;
+     right: 30px;
+     border: 1px solid white;
+     padding: 4px 12px;
+     border-radius: 100px;
+     border: 1px solid var(--Buttons-Tertiary-button-tertiary-border, #FFF);
+     color: white;
+     text-decoration: none;
+     transition: 0.3s;
+     z-index: 2;
+   }
+
+   .white-transparent-button-with-icon {
+     background: transparent;
+     border: 1px solid white;
+     color: white;
+     padding: 5px 5px;
+     font-size: 18px;
+     font-weight: 300;
+     border-radius: 25px;
+     transition: 0.3s;
+     display: flex;
+     align-items: center;
+     gap: 40px;
+     line-height: 0px;
+   }
+
+   .white-transparent-button-with-icon img {
+     height: 30px;
+     width: 30px;
+   }
+
+   .white-transparent-button-with-icon span {
+     margin-left: 10px;
+   }
+
+   .black-transparent-button {
+     background: transparent;
+     border: 1px solid var(--Buttons-Primary-button-primary-border, #242424);
+     background: var(--Buttons-Primary-button-primary-bg, #FFF);
+     color: rgb(0, 0, 0);
+     padding: 5px 5px;
+     font-size: 18px;
+     font-weight: 400;
+     border-radius: 100px;
+     transition: 0.3s;
+     display: flex;
+     align-items: center;
+     gap: 40px;
+     line-height: 0px;
+   }
+
+   .black-transparent-button img {
+     height: 30px;
+     width: 30px;
+   }
+
+   .black-transparent-button span {
+     margin-left: 10px;
+   }
+
+   .headline {
+     color: var(--colours-text-text-primary-900, #242424);
+     font-family: var(--font-family-title, "BricolageGrotesque");
+     font-size: var(--font-size-D3, 48px);
+     font-style: normal;
+     font-weight: 400;
+     line-height: var(--font-line-height-D3, 60px);
+     /* 125% */
+     margin-bottom: 32px;
+
+   }
+ }
+
+ /* Tablet Styles */
+ @media (min-width: 768px) and (max-width: 991px) {
+   .green-button {
+     background: var(--Buttons-Secondary-button-secondary-bg, #1CE783);
+     border: 1px solid var(--Buttons-Secondary-button-secondary-border, #242424);
+     color: black;
+     padding: 12px 20px;
+     gap: 8px;
+     font-size: var(--font-size-H6, 20px);
+     font-weight: 400;
+     letter-spacing: 0.8px;
+     border-radius: 100px;
+     transition: 0.3s;
+     display: inline-block;
+     text-decoration: none;
+   }
+
+   .white-transparent-button {
+     position: absolute;
+     bottom: 100px;
+     right: 50px;
+     border: 1px solid white;
+     padding: 8px 16px;
+     border-radius: 100px;
+     border: 1px solid var(--Buttons-Tertiary-button-tertiary-border, #FFF);
+     color: white;
+     text-decoration: none;
+     transition: 0.3s;
+     z-index: 2;
+   }
+
+   .white-transparent-button-with-icon {
+     background: transparent;
+     border: 1px solid white;
+     color: white;
+     padding: 5px 5px;
+     font-size: 18px;
+     font-weight: 300;
+     border-radius: 25px;
+     transition: 0.3s;
+     display: flex;
+     align-items: center;
+     gap: 40px;
+     line-height: 0px;
+   }
+
+   .white-transparent-button-with-icon img {
+     height: 30px;
+     width: 30px;
+   }
+
+   .white-transparent-button-with-icon span {
+     margin-left: 10px;
+   }
+
+   .black-transparent-button {
+     background: transparent;
+     border: 1px solid var(--Buttons-Primary-button-primary-border, #242424);
+     background: var(--Buttons-Primary-button-primary-bg, #FFF);
+     color: rgb(0, 0, 0);
+     padding: 5px 5px;
+     font-size: 18px;
+     font-weight: 300;
+     border-radius: 100px;
+     transition: 0.3s;
+     display: flex;
+     align-items: center;
+     gap: 40px;
+     line-height: 0px;
+   }
+
+   .black-transparent-button img {
+     height: 30px;
+     width: 30px;
+   }
+
+   .black-transparent-button span {
+     margin-left: 10px;
+   }
+
+   .headline {
+     color: var(--colours-text-text-primary-900, #242424);
+     font-family: var(--font-family-title, "BricolageGrotesque");
+     font-size: var(--font-size-D2, 64px);
+     font-style: normal;
+     font-weight: 400;
+     line-height: var(--font-line-height-D2, 80px);
+     /* 125% */
+     margin-bottom: 32px;
+
+   }
+ }
+
+ /* Desktop Styles */
+ @media (min-width: 992px) {
+   .green-button {
+     background: var(--Buttons-Secondary-button-secondary-bg, #1CE783);
+     border: 1px solid var(--Buttons-Secondary-button-secondary-border, #242424);
+     color: black;
+     padding: 10px 20px;
+     gap: 8px;
+     font-size: var(--font-size-H5, 24px);
+     font-weight: 400;
+     letter-spacing: 0.8px;
+     border-radius: 100px;
+     transition: 0.3s;
+     display: inline-block;
+     text-decoration: none;
+   }
+
+   .white-transparent-button {
+     position: absolute;
+     bottom: 100px;
+     right: 50px;
+     border: 1px solid white;
+     padding: 8px 16px;
+     border-radius: 100px;
+     border: 1px solid var(--Buttons-Tertiary-button-tertiary-border, #FFF);
+     color: white;
+     text-decoration: none;
+     transition: 0.3s;
+     z-index: 2;
+   }
+
+   .white-transparent-button-with-icon {
+     background: transparent;
+     border: 1px solid white;
+     color: white;
+     padding: 5px 5px;
+     font-size: 18px;
+     font-weight: 300;
+     border-radius: 25px;
+     transition: 0.3s;
+     display: flex;
+     align-items: center;
+     gap: 40px;
+     line-height: 0px;
+   }
+
+   .white-transparent-button-with-icon img {
+     height: 30px;
+     width: 30px;
+   }
+
+   .white-transparent-button-with-icon span {
+     margin-left: 10px;
+   }
+
+   .black-transparent-button {
+     background: transparent;
+     border: 1px solid var(--Buttons-Primary-button-primary-border, #242424);
+     background: var(--Buttons-Primary-button-primary-bg, #FFF);
+     color: rgb(0, 0, 0);
+     padding: 5px 5px;
+     font-size: 18px;
+     font-weight: 300;
+     border-radius: 100px;
+     transition: 0.3s;
+     display: flex;
+     align-items: center;
+     gap: 40px;
+     line-height: 0px;
+   }
+
+   .black-transparent-button img {
+     height: 30px;
+     width: 30px;
+   }
+
+   .black-transparent-button span {
+     margin-left: 10px;
+   }
+
+   .headline {
+     color: var(--colours-text-text-primary-900, #242424);
+     font-family: var(--font-family-title, "BricolageGrotesque");
+     font-size: var(--font-size-D1, 96px);
+     font-style: normal;
+     font-weight: 400;
+     line-height: var(--font-line-height-D1, 116px);
+     margin-bottom: 80px;
+
+   }
+
+ }
+
+ .section-title {
+   font-size: var(--font-size-H6, 20px);
+   font-style: normal;
+   font-weight: 400;
+   line-height: var(--font-line-height-H6, 28px);
+   /* 140% */
+   letter-spacing: 0.8px;
+   color: var(--colours-text-text-secondary-600, #797979);
+   text-transform: uppercase;
+   margin-bottom: 20px;
+ }
+
+ .middle-title {
+   color: var(--colours-text-text-primary-900, #242424);
+   text-align: center;
+   padding-bottom: 60px;
+   /* Heading 2/Semibold */
+   font-size: var(--font-size-H2, 36px);
+   font-style: normal;
+   font-weight: 600;
+   line-height: var(--font-line-height-H2, 44px);
+   /* 122.222% */
+ }
+
+ .breadcrumb-section {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+ }
+
+ /* Breadcrumb section */
+ .breadcrumb-section .custom-breadcrumb {
+   display: flex;
+   padding: var(--spacing-3, 12px) var(--spacing-11, 60px);
+   align-items: flex-start;
+   align-self: stretch;
+   border-bottom: 1px solid var(--Colours-Border-border-primary, #242424);
+   margin-bottom: 0px;
+ }
+
+ .breadcrumb-item {
+   color: var(--colours-text-text-primary-900, #242424);
+
+   /* Paragraph 2/Regular */
+   font-family: var(--font-family-body, inter);
+   font-size: var(--font-size-P2, 14px);
+   font-style: normal;
+   font-weight: 400;
+   line-height: var(--font-line-height-P2, 20px);
+   /* 142.857% */
+ }
+
+ .breadcrumb-item .active {
+   color: var(--colours-text-text-primary-900, #242424);
+   font-family: var(--font-family-body, inter);
+   font-size: var(--font-size-P2, 14px);
+   font-style: normal;
+   font-weight: 700;
+   line-height: var(--font-line-height-P2, 20px);
+   /* 142.857% */
+ }
+
+ .highlight-dot {
+   color: #1CE783;
+ }
+
+ .pagination {
+   justify-content: center;
+   margin-top: 20px;
+ }
+
+ .pagination-custom {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 475px;
+   margin-right: 475px;
+   background-color: #f4f4f4;
+   border-radius: 40px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+
+ .pagination-custom button {
+   border: none;
+   background-color: transparent;
+   font-size: 1.2rem;
+   margin: 0 10px;
+   padding: 10px;
+ }
+
+ .pagination-custom .pagination-arrow {
+   color: #6c757d;
+   font-size: 1.0rem;
+   background-color: #ffffff;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+ }
+
+ .pagination-custom .pagination-page {
+   margin: 0 5px;
+   border: none;
+   background-color: transparent;
+   font-size: 0.9rem;
+   font-weight: bold;
+   color: #6c757d;
+   cursor: pointer;
+ }
+
+ .pagination-custom .active-page {
+   background-color: #1CE783;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.9rem;
+   font-weight: bold;
+ }
+
+ .pagination-info {
+   text-align: center;
+   margin-top: 20px;
+   font-size: 0.85rem;
+ }
+
+ /* Responsive styles for tablets and mobile devices */
+ @media (max-width: 768px) {
+   .pagination-custom {
+     margin-left: 100px;
+     margin-right: 100px;
+     padding-top: 8px;
+     padding-bottom: 8px;
+   }
+
+   .pagination-custom .pagination-arrow,
+   .pagination-custom .active-page {
+     width: 40px;
+     height: 40px;
+     font-size: 12px;
+   }
+
+   .pagination-custom button {
+     font-size: 1rem;
+   }
+
+   .pagination-custom .pagination-page {
+     font-size: 0.85rem;
+   }
+ }
+
+ @media (max-width: 576px) {
+   .pagination-custom {
+     margin-left: 20px;
+     margin-right: 20px;
+     padding-top: 6px;
+     padding-bottom: 6px;
+   }
+
+   .pagination-custom .pagination-arrow,
+   .pagination-custom .active-page {
+     width: 35px;
+     height: 35px;
+     font-size: 10px;
+   }
+
+   .pagination-custom button {
+     font-size: 0.9rem;
+   }
+
+   .pagination-custom .pagination-page {
+     font-size: 0.8rem;
+   }
+ }
+
+ .divider {
+   border-top: 1px solid var(--Colours-Border-border-secondary, #C1C1C1);
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+
+ /* Pagination Dots */
+ .pagination-dots .dot {
+   height: 10px;
+   width: 10px;
+   background-color: #cccccc;
+   border-radius: 50%;
+   display: inline-block;
+   margin: 0 5px;
+ }
+
+ .pagination-dots .dot.active {
+   background-color: #00C800;
+ }

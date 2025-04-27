@@ -1,0 +1,664 @@
+/* Hero Section Styling */
+.career-hero-section {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    background: linear-gradient(90deg, #003534 50%, #1ce783 100%);
+    color: white;
+    text-align: left;
+    padding-left: 90px;
+}
+
+.career-hero-section .career-hero-content {
+    max-width: 900px;
+    padding: 20px;
+}
+
+.career-hero-section .career-hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+.career-hero-section .career-hero-content p {
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+/* Media query for tablet and mobile views */
+@media (max-width: 991px) {
+    .career-hero-section {
+        padding-left: 20px;
+    }
+
+    .career-hero-section .career-hero-content h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+}
+
+/* Why vertis section */
+.why-vertis {
+    background-color: #242424;
+    color: white;
+}
+
+.why-vertis h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.why-vertis p.lead {
+    font-size: 1.2rem;
+}
+
+.pill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pill {
+    background-color: transparent;
+    color: #1CE783;
+    font-weight: 400;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    border: 2px solid #1CE783;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.pill:hover {
+    background-color: #1CE783;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Add rotation to individual pills */
+.pill:nth-child(1) {
+    transform: rotate(6deg)translateX(-80px);
+}
+
+.pill:nth-child(2) {
+    transform: rotate(-3deg)translateX(-40px);
+}
+
+.pill:nth-child(3) {
+    transform: rotate(3deg)translateX(-100px);
+}
+
+.pill:nth-child(4) {
+    transform: rotate(-5deg)translateX(0px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pill-container {
+        align-items: left;
+    }
+}
+
+/* Responsive adjustments for tablet and mobile screens */
+@media (max-width: 768px) {
+    .pill-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pill {
+        transform: none;
+        margin: 10px;
+    }
+
+    .pill-container .pill:hover {
+        transform: scale(1.05);
+        /* Scale only on hover */
+    }
+
+    .pill:nth-child(1) {
+        transform: rotate(0deg);
+    }
+
+    .pill:nth-child(2) {
+        transform: rotate(0deg);
+    }
+
+    .pill:nth-child(3) {
+        transform: rotate(0deg);
+    }
+
+    .pill:nth-child(4) {
+        transform: rotate(0deg);
+    }
+
+    .why-vertis {
+        background-color: #242424;
+        color: white;
+        padding: 10px;
+    }
+}
+
+/* Jobs Section */
+.job-card {
+    border: 1px solid #0d0d0d;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.job-card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.explore-jobs .job-card-list {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    // margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-title-list {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.job-description-list {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.job-location img,
+.job-type img {
+    margin-right: 5px;
+}
+
+.job-location-list,
+.job-type-list {
+    margin-right: 20px;
+    color: #aaa;
+}
+
+.d-flex {
+    margin-top: 10px;
+}
+
+.icon-list {
+    color: black;
+    margin-right: 10px;
+}
+
+.icon-grid {
+    color: white;
+}
+
+.btn-group .btn-outline-primary {
+    border-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 1px;
+}
+
+.btn-group label:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.btn-group label:last-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* SVG default state - set color to black */
+.btn-group label img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+    width: 20px;
+    height: 20px;
+}
+
+/* Styling for the label (button) */
+.btn-group label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+/* Change the background, border, and SVG color when the button is checked */
+.explore-jobs .btn-check:checked+.btn-outline-primary {
+    background-color: #00000000;
+    border-color: #000;
+}
+
+/* Change the icon color when the button is active (clicked) */
+.btn-check:checked+.btn-outline-primary img {
+    filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(400%) hue-rotate(80deg) brightness(90%) contrast(80%);
+}
+
+/* Set border color, background, and icon color for active button */
+.btn-check:checked+.btn-outline-primary label {
+    background-color: #000;
+    border-color: #99ff00;
+}
+
+/* Custom hover effect for button */
+.btn-group label:hover {
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-color: #000;
+    opacity: 0.8;
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.job-location,
+.job-type {
+    font-size: 0.9rem;
+    color: #888;
+    margin-right: 15px;
+}
+
+.job-description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.explore-jobs , .email-us-section {
+    .apply-now-btn {
+        border-radius: 50px;
+        padding: 10px 5px 10px 20px;
+        background-color: white;
+        border: 1px solid #000000;
+        color: black;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .apply-now-btn:hover {
+        background-color: #00ff87;
+        color: black;
+    }
+
+    .explore-jobs .apply-now-btn-icon {
+        background-color: #00ff81;
+        border-radius: 100px;
+        padding: 7px 5px;
+        border: 1px solid black;
+        margin-left: 7px;
+    }
+}
+
+
+
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #00ff87;
+    border-color: #00ff87;
+    color: black;
+}
+
+.input-group {
+    max-width: 600px;
+    margin-right: auto;
+}
+
+.form-control-search {
+    border-radius: 30px 0 0 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid #000000;
+    padding-left: 15px;
+    box-shadow: none;
+    width: 80%;
+    height: auto;
+}
+
+.explore-jobs .input-group-text {
+    border-radius: 0 30px 30px 0;
+    background-color: #fff;
+    border: 1px solid #000000;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.explore-jobs .input-group-text svg {
+    fill: #888;
+}
+
+.explore-jobs .form-control-search:focus,
+.explore-jobs .input-group-text:hover {
+    border-color: #000000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.explore-jobs .form-select {
+    border-radius: 30px;
+    max-width: 450px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    transition: border-color 0.3s ease;
+}
+
+.explore-jobs .form-select:focus {
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(0, 255, 135, 0.5);
+}
+
+.pagination-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 475px;
+    margin-right: 475px;
+    background-color: #f4f4f4;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pagination-custom button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.pagination-custom .pagination-arrow {
+    color: #6c757d;
+    font-size: 1.0rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.pagination-custom .pagination-page {
+    margin: 0 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.pagination-custom .active-page {
+    background-color: #1CE783;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.pagination-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+/* Responsive styles for tablets and mobile devices */
+@media (max-width: 768px) {
+    .pagination-custom {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .pagination-custom .pagination-arrow,
+    .pagination-custom .active-page {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .pagination-custom button {
+        font-size: 1rem;
+    }
+
+    .pagination-custom .pagination-page {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .pagination-custom {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .pagination-custom .pagination-arrow,
+    .pagination-custom .active-page {
+        width: 35px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    .pagination-custom button {
+        font-size: 0.9rem;
+    }
+
+    .pagination-custom .pagination-page {
+        font-size: 0.8rem;
+    }
+}
+
+/* Email us section */
+.email-us-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F0F0F0;
+}
+
+.email-us-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.email-us-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #6c757d;
+}
+
+.email-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.email-button:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.email-button .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #00d084;
+    color: #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* FAQ section */
+.faq-section {
+    padding: 50px 0;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.faq-header {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.faq-header span {
+    color: #00ff66;
+}
+
+#faqAccordion {
+    .accordion-button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            position: relative;
+            padding-right: 2.5rem;
+        }
+    
+        .accordion-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+        }
+    
+        /* Show plus icon when collapsed */
+        .accordion-button.collapsed .accordion-plus-icon {
+            display: inline;
+        }
+    
+        /* Hide minus icon when collapsed */
+        .accordion-button.collapsed .accordion-minus-icon {
+            display: none;
+        }
+    
+        /* Hide plus icon when expanded */
+        .accordion-button:not(.collapsed) .accordion-plus-icon {
+            display: none;
+        }
+    
+        /* Show minus icon when expanded */
+        .accordion-button:not(.collapsed) .accordion-minus-icon {
+            display: inline;
+        }
+    
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+    
+        .accordion-button.collapsed::after {
+            filter: invert(100%);
+        }
+    
+        .accordion-item {
+            background-color: transparent;
+            border: none;
+        }
+    
+        .accordion-body {
+            color: #7e7e7e;
+        }
+    
+        hr {
+            border-color: #a7a7a7;
+        }
+    
+        .accordion-button:not(.collapsed) {
+            color: #ffffff;
+            background-color: #cfe2ff00;
+            box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+        }
+    
+        .accordion-button::after {
+            display: none;
+        }
+    
+        /* Custom icon on the right corner */
+        .accordion-button {
+            position: relative;
+            padding-right: 2.5rem;
+        }
+    
+        /* Add "+" icon when accordion is collapsed */
+        .accordion-button.collapsed::before {
+            content: '';
+            // background-image: url('assets/icons/24/Plus.svg');
+            background-image: url('../../assets/images/icons/24/Plus.svg');
+            background-size: 24px 24px;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #1CE783;
+        }
+    
+        /* Add "-" icon when accordion is expanded */
+        .accordion-button:not(.collapsed)::before {
+            content: '';
+            // background-image: url('assets/icons/24/Minus.svg');
+            background-image: url('../../assets/images/icons/24/Minus.svg');
+            background-size: 24px 24px;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #1CE783;
+        }
+    
+        .accordion-button.collapsed .accordion-icon {
+            filter: brightness(0) saturate(100%) invert(40%) sepia(95%) saturate(652%) hue-rotate(109deg) brightness(102%) contrast(101%);
+        }
+    
+        /* For expanded accordion button with minus icon */
+        .accordion-button:not(.collapsed) .accordion-icon {
+            filter: brightness(0) saturate(100%) invert(40%) sepia(95%) saturate(652%) hue-rotate(109deg) brightness(102%) contrast(101%);
+        }
+    
+        .muted-text {
+            color: #7e7e7e;
+            font-weight: normal;
+            font-size: 0.9rem;
+        }
+}
+
