@@ -9,12 +9,13 @@
 @import "./header";
 @import "./footer";
 @import "./contact";
- @import"./testimonials/testimonials";
+@import"./testimonials/testimonials";
 
- @import "./home/home";
- @import "./about/about";
+@import "./home/home";
+@import "./about/about";
 @import "./career/_career";
- 
+@import "./works/works";
+
 
 
 body {
@@ -24,4 +25,3 @@ body {
   color: #191919;
   background: #FFF;
 }
-

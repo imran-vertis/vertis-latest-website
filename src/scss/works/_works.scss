@@ -1,0 +1,264 @@
+@media (max-width: 767px) {
+    .works-section {
+        display: flex;
+        padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+    }
+
+        .feature-work-cards.card-grid.container .card-grid {
+        margin-top: 40px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    .works-section {
+        display: flex;
+        padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+    }
+
+    .card-grid {
+        margin-top: 60px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    .works-section {
+        display: flex;
+        padding: var(--spacing-12, 80px) var(--spacing-11, 60px);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+    }
+
+    .card-grid {
+        margin-top: 80px;
+    }
+
+}
+
+.filter-buttons {
+    gap: 5px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #242424;
+    color: #242424;
+    background-color: transparent;
+    font-family: "BricolageGrotesque", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.filter-btn:hover {
+    background-color: #28a745;
+    color: rgb(0, 0, 0);
+    border: 1px solid #242424;
+}
+
+/* Active button */
+.filter-btn.active {
+    background-color: #28a745;
+    color: rgb(0, 0, 0);
+    border: 1px solid #242424;
+}
+
+.filter-buttons .btn {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hide filter-buttons on screens smaller than 992px (mobile & tablet) */
+@media (max-width: 991px) {
+    .filter-buttons {
+        display: none !important;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: auto !important;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px !important;
+}
+
+.swiper-slide .filter-btn {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #242424;
+    color: #242424;
+    background-color: transparent;
+    font-family: "BricolageGrotesque", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-slide .filter-btn:hover {
+    background-color: #28a745;
+    color: rgb(0, 0, 0);
+    border: 1px solid #242424;
+}
+
+.swiper-slide .filter-btn.active {
+    background-color: #28a745;
+    color: rgb(0, 0, 0);
+    border: 1px solid #242424;
+}
+
+.swiper-slide {
+    width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 40%;
+}
+
+.feature-work-cards.card-grid.container .card {
+    border: 1px solid var(--Colours-Border-border-primary, #242424);
+    margin-bottom: 0;
+    padding: 32px;
+    border-radius: 0px;
+}
+
+.card-body {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.feature-work-cards.card-grid.container .card-title {
+    color: var(--colours-text-text-primary-900, #242424);
+    font-family: var(--font-family-title, "BricolageGrotesque");
+    font-size: var(--font-size-H2, 36px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--font-line-height-H2, 44px);
+    /* 122.222% */
+}
+
+.feature-work-cards.card-grid.container .card-text {
+    overflow: hidden;
+    color: var(--colours-text-text-secondary-600, #797979);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: var(--font-family-body, inter);
+    font-size: var(--font-size-P1, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-P1, 24px);
+    /* 150% */
+    letter-spacing: 0.32px;
+}
+
+.feature-work-cards.card-grid.container .col-md-4 {
+    padding: 0;
+}
+
+.feature-work-cards.card-grid.container .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 47/32;
+}
+
+.tags {
+    margin-bottom: 10px;
+}
+
+.tags span {
+    border-radius: 100px;
+    border: 1px solid var(--Buttons-Tabs-tab-border, #242424);
+    padding: 5px 10px !important;
+    margin-right: 5px;
+    padding: var(--spacing-1, 4px);
+    align-items: center;
+    color: var(--Buttons-Tabs-tab-fg, #242424);
+    font-family: var(--font-family-body, inter);
+    font-size: var(--font-size-P2, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-P2, 20px);
+    /* 142.857% */
+}
+
+.view-more-link {
+    color: var(--colours-text-text-primary-900, #242424);
+    font-family: var(--font-family-title, "BricolageGrotesque");
+    font-size: var(--font-size-H6, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-H6, 28px);
+    letter-spacing: 0.8px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+/* Remove borders for desktop view */
+@media (min-width: 992px) {
+
+    /* 1. Remove bottom border from the first row cards */
+    .row>.col-md-4:nth-child(1) .card,
+    .row>.col-md-4:nth-child(2) .card,
+    .row>.col-md-4:nth-child(3) .card {
+        border-bottom: none;
+    }
+
+    /* 2. Remove left and right borders from the middle card in the first row */
+    .row>.col-md-4:nth-child(2) .card {
+        border-left: none;
+        border-right: none;
+    }
+
+    /* 3. Remove left and right borders from the middle card in the second row */
+    .row>.col-md-4:nth-child(5) .card {
+        border-left: none;
+        border-right: none;
+    }
+}
+
+/* Tablet view adjustments (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* 1. Remove left border from the second card of each row */
+    .row>.col-md-4:nth-child(2) .card {
+        border-left: none;
+    }
+
+    /* 2. Remove bottom border from all cards except the last row */
+    .row>.col-md-4:nth-child(1):not(:nth-last-child(-n+2)) .card,
+    .row>.col-md-4:nth-child(2):not(:nth-last-child(-n+1)) .card {
+        border-bottom: none;
+    }
+}
