@@ -18,5 +18,8 @@
   },
   "[njk]": {
     "editor.defaultFormatter": "eseom.nunjucks-template"
+  },
+  "[nunjucks]": {
+    "editor.defaultFormatter": "okitavera.vscode-nunjucks-formatter"
   }
 }

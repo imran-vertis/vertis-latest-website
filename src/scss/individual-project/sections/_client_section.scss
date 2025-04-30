@@ -1,0 +1,167 @@
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .client-section {
+    display: flex;
+    padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-0, 0px);
+    background: var(--Colours-Background-bg-tertiary, #242424);
+  }
+
+  .counters-section {
+    display: flex;
+    padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
+    align-items: center;
+    background: var(--Colours-Background-bg-primary, #FFF);
+  }
+
+  .display-4 {
+    color: var(--colours-text-text-primary-900, #242424);
+    font-family: var(--font-family-title, "BricolageGrotesque");
+    font-size: var(--font-size-D2, 64px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-D2, 80px);
+    /* 125% */
+  }
+  .display-4 span img{
+    position: relative; 
+    top: -15px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  .client-section {
+    display: flex;
+    padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-0, 0px);
+    background: var(--Colours-Background-bg-tertiary, #242424);
+  }
+
+  .counters-section {
+    display: flex;
+    padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--Colours-Background-bg-primary, #FFF);
+  }
+
+  .display-4 {
+    color: var(--colours-text-text-primary-900, #242424);
+    font-family: var(--font-family-title, "BricolageGrotesque");
+    font-size: var(--font-size-D2, 64px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-D2, 80px);
+    /* 125% */
+  }
+  .display-4 span img{
+    position: relative; 
+    top: -20px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+  .client-section {
+    display: flex;
+    padding: var(--spacing-12, 80px) var(--spacing-11, 60px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-0, 0px);
+    background: var(--Colours-Background-bg-tertiary, #242424);
+  }
+
+  .counters-section {
+    display: flex;
+    padding: var(--spacing-12, 80px) var(--spacing-11, 60px);
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--Colours-Background-bg-primary, #FFF);
+  }
+
+  .display-4 {
+    color: var(--colours-text-text-primary-900, #242424);
+    font-family: var(--font-family-title, "BricolageGrotesque");
+    font-size: var(--font-size-D1, 96px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-D1, 116px);
+    /* 120.833% */
+  }
+  .display-4 span img{
+    position: relative; 
+    top: -30px;
+  }
+}
+
+.section-content {
+  color: var(--Base-white, #FFF);
+  font-family: var(--font-family-body, inter);
+  font-size: var(--font-size-P1, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-line-height-P1, 24px);
+  letter-spacing: 0.32px;
+}
+
+.project-details {
+  color: #00c800;
+}
+
+.project-details h5 {
+  color: var(--Secondary-300, #1CE783);
+  font-family: var(--font-family-title, "BricolageGrotesque");
+  font-size: var(--font-size-H6, 20px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: var(--font-line-height-H6, 28px);
+  /* 140% */
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  color: var(--Base-white, #FFF);
+  font-family: var(--font-family-body, inter);
+  font-size: var(--font-size-P1, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-line-height-P1, 24px);
+  letter-spacing: 0.32px;
+  margin-bottom: 32px;
+}
+
+.scope-tags span {
+  font-size: 1rem;
+  padding-right: 15px;
+}
+
+.project-description {
+  margin-top: 30px;
+  line-height: 1.7;
+}
+
+.metric-label {
+  color: var(--colours-text-text-secondary-600, #797979);
+  font-family: var(--font-family-body, inter);
+  font-size: var(--font-size-P1, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-line-height-P1, 24px);
+  /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.row.text-left .col-md-4::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #eaeaea;
+  width: 100%;
+  margin: 20px auto;
+}

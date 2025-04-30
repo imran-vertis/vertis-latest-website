@@ -1,7 +1,7 @@
   /* Top Section */
   /* Mobile Styles */
   @media (max-width: 767px) {
-      .header-section h2 {
+      .top-section.about .header-section h2 {
         color: var(--Colours-Text-text-white, #FFF);
 
         /* Display 3/Regular */
@@ -12,7 +12,7 @@
         line-height: var(--font-line-height-D3, 60px); /* 125% */
       }
 
-      .top-section {
+      .top-section.about {
           display: flex;
           padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
           flex-direction: column;
@@ -25,7 +25,7 @@
 
   /* Tablet Styles */
   @media (min-width: 768px) and (max-width: 991px) {
-      .header-section h2 {
+      .top-section.about .header-section h2 {
         color: var(--Colours-Text-text-white, #FFF);
 
         /* Display 2/Regular */
@@ -36,7 +36,7 @@
         line-height: var(--font-line-height-D2, 80px); /* 125% */
       }
 
-      .top-section {
+      .top-section.about {
           display: flex;
           padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
           flex-direction: column;
@@ -49,7 +49,7 @@
 
   /* Desktop Styles */
   @media (min-width: 992px) {
-      .header-section h2 {
+      .top-section.about .header-section h2 {
           color: var(--Colours-Text-text-white, #FFF);
           /* Display 1/Regular */
           font-family: var(--font-family-title, "BricolageGrotesque");
@@ -60,7 +60,7 @@
           padding-bottom: 80px;
       }
 
-      .top-section {
+      .top-section.about {
           display: flex;
           padding: var(--spacing-12, 80px) var(--spacing-11, 60px);
           flex-direction: column;

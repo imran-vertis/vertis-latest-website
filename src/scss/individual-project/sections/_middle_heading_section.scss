@@ -1,0 +1,67 @@
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .middle-heading-section {
+        display: flex;
+        padding: var(--spacing-9, 40px) var(--spacing-7, 28px);
+        flex-direction: column;
+        align-items: flex-end;
+        gap: var(--spacing-12, 80px);
+        background: var(--Colours-Background-bg-tertiary, #242424);
+    }
+
+    .green-heading {
+        color: var(--colours-text-text-primary-brand-300, #1CE783);
+        text-align: center;
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-H2, 36px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--font-line-height-H2, 44px); /* 122.222% */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    .middle-heading-section {
+        display: flex;
+        padding: var(--spacing-11, 60px) var(--spacing-12, 80px);
+        flex-direction: column;
+        align-items: flex-end;
+        gap: var(--spacing-12, 80px);
+        background: var(--Colours-Background-bg-tertiary, #242424);
+    }
+
+    .green-heading {
+        color: var(--colours-text-text-primary-brand-300, #1CE783);
+        text-align: center;
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-D3, 48px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--font-line-height-D3, 60px);
+        /* 125% */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    .middle-heading-section {
+        display: flex;
+        padding: var(--spacing-12, 80px) var(--spacing-13, 100px);
+        flex-direction: column;
+        align-items: flex-end;
+        gap: var(--spacing-13, 100px);
+        background: var(--Colours-Background-bg-tertiary, #242424);
+    }
+
+    .green-heading {
+        color: var(--colours-text-text-primary-brand-300, #1CE783);
+        text-align: center;
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-D2, 64px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--font-line-height-D2, 80px);
+        /* 125% */
+    }
+}

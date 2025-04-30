@@ -146,9 +146,10 @@
     border-radius: 0px;
 }
 
-.card-body {
+.feature-work-cards.card-grid.container .card-body {
     padding-left: 0px;
     padding-right: 0px;
+    width: 100%;
 }
 
 .feature-work-cards.card-grid.container .card-title {
@@ -229,20 +230,20 @@
 @media (min-width: 992px) {
 
     /* 1. Remove bottom border from the first row cards */
-    .row>.col-md-4:nth-child(1) .card,
-    .row>.col-md-4:nth-child(2) .card,
-    .row>.col-md-4:nth-child(3) .card {
+    .feature-work-cards .row>.col-md-4:nth-child(1) .card,
+    .feature-work-cards .row>.col-md-4:nth-child(2) .card,
+    .feature-work-cards .row>.col-md-4:nth-child(3) .card {
         border-bottom: none;
     }
 
     /* 2. Remove left and right borders from the middle card in the first row */
-    .row>.col-md-4:nth-child(2) .card {
+    .feature-work-cards .row>.col-md-4:nth-child(2) .card {
         border-left: none;
         border-right: none;
     }
 
     /* 3. Remove left and right borders from the middle card in the second row */
-    .row>.col-md-4:nth-child(5) .card {
+    .feature-work-cards .row>.col-md-4:nth-child(5) .card {
         border-left: none;
         border-right: none;
     }
@@ -252,13 +253,13 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
     /* 1. Remove left border from the second card of each row */
-    .row>.col-md-4:nth-child(2) .card {
+    .feature-work-cards .row>.col-md-4:nth-child(2) .card {
         border-left: none;
     }
 
     /* 2. Remove bottom border from all cards except the last row */
-    .row>.col-md-4:nth-child(1):not(:nth-last-child(-n+2)) .card,
-    .row>.col-md-4:nth-child(2):not(:nth-last-child(-n+1)) .card {
+    .feature-work-cards .row>.col-md-4:nth-child(1):not(:nth-last-child(-n+2)) .card,
+    .feature-work-cards .row>.col-md-4:nth-child(2):not(:nth-last-child(-n+1)) .card {
         border-bottom: none;
     }
 }

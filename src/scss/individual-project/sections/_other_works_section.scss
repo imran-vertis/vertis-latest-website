@@ -1,0 +1,182 @@
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .other-works-section {
+        display: flex;
+        padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        background: var(--Colours-Background-bg-primary, #FFF);
+    }
+
+    .heading {
+        color: var(--colours-text-text-primary-900, #242424);
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-H3, 32px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: var(--font-line-height-H3, 40px);
+        /* 125% */
+        padding-bottom: 32px;
+        padding-left: 10px !important;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    .other-works-section {
+        display: flex;
+        padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        background: var(--Colours-Background-bg-primary, #FFF);
+    }
+
+    .heading {
+        color: var(--colours-text-text-primary-900, #242424);
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-H2, 36px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: var(--font-line-height-H2, 44px);
+        padding-left: 0px !important;
+        padding-bottom: 40px;
+        /* 122.222% */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    .other-works-section {
+        display: flex;
+        padding: var(--spacing-12, 80px) var(--spacing-11, 60px);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        background: var(--Colours-Background-bg-primary, #FFF);
+    }
+
+    .heading {
+        color: var(--colours-text-text-primary-900, #242424);
+        font-family: var(--font-family-title, "BricolageGrotesque");
+        font-size: var(--font-size-H2, 36px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: var(--font-line-height-H2, 44px);
+        padding-left: 0px !important;
+        padding-bottom: 48px;
+        /* 122.222% */
+    }
+}
+
+.other-works-section.individual-project .card {
+    display: flex;
+    padding: var(--spacing-8, 32px);
+    align-items: center;
+    border: 1px solid var(--Colours-Border-border-primary, #242424);
+    border-radius: 0px;
+    background: var(--Colours-Background-bg-primary, #FFF);
+}
+
+.other-works-section.individual-project .card-body {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.other-works-section.individual-project .col-md-4 {
+    padding: 0;
+}
+
+.other-works-section.individual-project .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #ccc;
+}
+
+.other-works-section.individual-project .card-title {
+    color: var(--colours-text-text-primary-900, #242424);
+    font-family: var(--font-family-title, "BricolageGrotesque");
+    font-size: var(--font-size-H3, 32px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--font-line-height-H3, 40px); /* 125% */
+}
+
+.other-works-section.individual-project .card-text {
+    overflow: hidden;
+    color: var(--colours-text-text-secondary-600, #797979);
+    text-overflow: ellipsis;
+    font-family: var(--font-family-body, inter);
+    font-size: var(--font-size-P1, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-P1, 24px); /* 150% */
+    letter-spacing: 0.32px;
+    padding-bottom: 12px;
+}
+
+.tags span {
+    border-radius: 100px;
+    border: 1px solid var(--Buttons-Tabs-tab-border, #242424);
+    padding: 5px 10px !important;
+    margin-right: 5px;
+    padding: var(--spacing-1, 4px);
+    align-items: center;
+    color: var(--Buttons-Tabs-tab-fg, #242424);
+    font-family: var(--font-family-body, inter);
+    font-size: var(--font-size-P2, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-P2, 20px);
+    /* 142.857% */
+}
+
+.tags {
+    margin-bottom: 24px;
+}
+
+.view-more-link {
+    color: var(--colours-text-text-primary-900, #242424);
+    font-family: var(--font-family-title, "BricolageGrotesque");
+    font-size: var(--font-size-H6, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-H6, 28px); /* 140% */
+    letter-spacing: 0.8px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 0.5em 0.75em;
+    font-weight: 500;
+}
+
+@media (min-width: 992px) {
+    .col-md-4:nth-child(2) .other-works-section.individual-project .card {
+        border-left: none;
+        border-right: none;
+    }
+}
+
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    .swiper-container {
+        overflow: visible;
+    }
+}
