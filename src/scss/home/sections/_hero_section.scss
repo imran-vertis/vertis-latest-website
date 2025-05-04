@@ -1,10 +1,10 @@
+.homepage-hero-section {
+
 /* Mobile Styles */
 @media (max-width: 767px) {
     .hero-content h1 {
         color: var(--Colours-Text-text-white, #FFF);
         text-align: center;
-
-        /* Display 3/Regular */
         font-size: var(--font-size-D3, 48px);
         font-style: normal;
         font-weight: 400;
@@ -71,4 +71,4 @@
     color: #1ce783;
     background: rgba(0, 0, 0, 0);
     transition: background 0.3s, color 0.3s;
-}
+}}

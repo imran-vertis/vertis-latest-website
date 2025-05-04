@@ -1,42 +1,104 @@
-// contact.js - Start
-if (document.querySelectorAll(".form-control")) {
-    document.addEventListener("DOMContentLoaded", function () {
-        const inputs = document.querySelectorAll(".form-control");
+// header.js - Start
 
-        inputs.forEach((input) => {
-            let placeholderText = input.getAttribute("placeholder");
-            if (input.hasAttribute("required") && !placeholderText.includes("*")) {
-                input.setAttribute("placeholder", placeholderText + " ");
-            }
-        });
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.getElementById("vertisGroupDropdown");
+    if (!dropdown) return;
+
+    const dropdownIcon = document.getElementById("dropdownIcon");
+    const dropdownMenu = dropdown.nextElementSibling;
+    const parent = dropdown.parentElement;
+
+    if (!dropdownIcon || !dropdownMenu || !parent) return;
+
+    parent.addEventListener("mouseenter", () => {
+        dropdownIcon.src = "/assets/images/icons/24/Accordion-up.svg";
+        dropdownMenu.classList.add("show");
+        dropdown.setAttribute("aria-expanded", "true");
     });
-}
+
+    parent.addEventListener("mouseleave", () => {
+        dropdownIcon.src = "/assets/images/icons/24/Accordion-down.svg";
+        dropdownMenu.classList.remove("show");
+        dropdown.setAttribute("aria-expanded", "false");
+    });
+
+    dropdown.addEventListener("click", () => {
+        window.location.href = "/pages/group/";
+    });
+});
 
 
 // End
 
+// contact.js - Start
+document.addEventListener("DOMContentLoaded", function () {
+
+if (document.querySelectorAll(".form-control")) {
+    
+    const inputs = document.querySelectorAll(".form-control");
+    inputs.forEach((input) => {
+        let placeholderText = input.getAttribute("placeholder");
+        if (input.hasAttribute("required") && !placeholderText.includes("*")) {
+            input.setAttribute("placeholder", placeholderText + " ");
+        }
+    });
+    
+    }
+});
+
+// End
+
+// our_people.js - Start
+
+document.addEventListener("DOMContentLoaded", () => {
+    const peopleSection = document.querySelector("section.our-people-section");
+    if (!peopleSection) return;
+
+    new Swiper(".swiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            992: {
+                slidesPerView: 3,
+            },
+            1200: {
+                enabled: false,
+            }
+        }
+    });
+});
+
+// End
+
+
+
 // news.js - Start
 
-if (document.querySelectorAll(".news-title-text")) {
-    document.addEventListener("DOMContentLoaded", function () {
-        let newsTitles = document.querySelectorAll(".news-title-text");
+// if (document.querySelectorAll(".news-title-text")) {
 
-        newsTitles.forEach((title) => {
-            let words = title.innerText.trim().split(" ");
+//     // document.addEventListener("DOMContentLoaded", function () {
+//     //     let newsTitles = document.querySelectorAll(".news-title-text");
 
-            if (words.length > 10) {
-                // If more than 10 words, truncate and add "..."
-                title.innerText = words.slice(0, 10).join(" ") + "...";
-            } else {
-                // If less than 10 words, add non-breaking spaces (&nbsp;) for consistent height
-                let spacesNeeded = 10 - words.length;
-                for (let i = 0; i < spacesNeeded; i++) {
-                    title.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; // Adds visible spaces
-                }
-            }
-        });
-    });
-}
+//     //     newsTitles.forEach((title) => {
+//     //         let words = title.innerText.trim().split(" ");
+
+//     //         if (words.length > 10) {
+//     //             // If more than 10 words, truncate and add "..."
+//     //             title.innerText = words.slice(0, 10).join(" ") + "...";
+//     //         } else {
+//     //             // If less than 10 words, add non-breaking spaces (&nbsp;) for consistent height
+//     //             let spacesNeeded = 10 - words.length;
+//     //             for (let i = 0; i < spacesNeeded; i++) {
+//     //                 title.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; // Adds visible spaces
+//     //             }
+//     //         }
+//     //     });
+//     // });
+// }
 
 
 // End
@@ -71,53 +133,6 @@ if (document.querySelectorAll(".news-title-text")) {
 //         });
 //     }
 // });
-
-// End
-
-// our_people.js - Start
-
-if (document.querySelector('section.our-people-section')) {
-    document.addEventListener("DOMContentLoaded", function () {
-        let newsTitles = document.querySelectorAll(".card-text");
-
-        newsTitles.forEach((title) => {
-            let words = title.innerText.trim().split(" ");
-
-            if (words.length > 20) {
-                // If more than 20 words, truncate and add "..."
-                title.innerText = words.slice(0, 20).join(" ") + "...";
-            } else {
-                // If less than 20 words, add non-breaking spaces (&nbsp;) for consistent height
-                let spacesNeeded = 20 - words.length;
-                for (let i = 0; i < spacesNeeded; i++) {
-                    title.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; // Adds visible spaces
-                }
-            }
-        });
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-        new Swiper(".swiper-container", {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                992: {
-                    slidesPerView: 3,
-                },
-
-                1200: {
-                    enabled: false,
-                }
-            }
-        });
-    });
- }
-
-
 
 // End
 
@@ -207,69 +222,73 @@ if (document.querySelector(".testimonial-slider")) {
 
 // works.js - Start
 
+if (document.querySelector('.works-section')) {
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     let newsTitles = document.querySelectorAll(".card-text");
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     let newsTitles = document.querySelectorAll(".card-text");
 
-//     newsTitles.forEach((title) => {
-//         let words = title.innerText.trim().split(" ");
+    //     newsTitles.forEach((title) => {
+    //         let words = title.innerText.trim().split(" ");
 
-//         if (words.length > 20) {
-//             // If more than 20 words, truncate and add "..."
-//             title.innerText = words.slice(0, 20).join(" ") + "...";
-//         } else {
-//             // If less than 20 words, add non-breaking spaces (&nbsp;) for consistent height
-//             let spacesNeeded = 20 - words.length;
-//             for (let i = 0; i < spacesNeeded; i++) {
-//                 title.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; // Adds visible spaces
-//             }
-//         }
-//     });
-// });
+    //         if (words.length > 200) {
+    //             // If more than 20 words, truncate and add "..."
+    //             title.innerText = words.slice(0, 200).join(" ") + "...";
+    //         } else {
+    //             // If less than 20 words, add non-breaking spaces (&nbsp;) for consistent height
+    //             let spacesNeeded = 200 - words.length;
+    //             for (let i = 0; i < spacesNeeded; i++) {
+    //                 title.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; // Adds visible spaces
+    //             }
+    //         }
+    //     });
+    // });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     new Swiper(".swiper-container", {
-//         slidesPerView: "auto", // Adjusts to button width
-//         spaceBetween: 5,
-//         pagination: {
-//             el: ".swiper-pagination",
-//             clickable: true,
-//         },
-//         breakpoints: {
-//             992: { enabled: false }, // Disables Swiper on desktops (992px+)
-//         }
-//     });
-// });
+    document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".swiper-container", {
+            slidesPerView: "3", // Adjusts to button width
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                992: { enabled: false }, // Disables Swiper on desktops (992px+)
+            }
+        });
+    });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const filterButtons = document.querySelectorAll(".filter-buttons .btn");
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const filterButtons = document.querySelectorAll(".filter-buttons .btn");
 
-//     filterButtons.forEach(button => {
-//         // Add hover effect
-//         button.addEventListener("mouseenter", function () {
-//             if (!this.classList.contains("btn-success")) {
-//                 this.classList.replace("btn-outline-dark", "btn-success");
-//             }
-//         });
+    //     filterButtons.forEach(button => {
+    //         // Add hover effect
+    //         button.addEventListener("mouseenter", function () {
+    //             if (!this.classList.contains("btn-success")) {
+    //                 this.classList.replace("btn-outline-dark", "btn-success");
+    //             }
+    //         });
 
-//         button.addEventListener("mouseleave", function () {
-//             if (!this.classList.contains("active")) {
-//                 this.classList.replace("btn-success", "btn-outline-dark");
-//             }
-//         });
+    //         button.addEventListener("mouseleave", function () {
+    //             if (!this.classList.contains("active")) {
+    //                 this.classList.replace("btn-success", "btn-outline-dark");
+    //             }
+    //         });
 
-//         // Click event to activate button
-//         button.addEventListener("click", function () {
-//             filterButtons.forEach(btn => {
-//                 btn.classList.remove("active");
-//                 btn.classList.replace("btn-success", "btn-outline-dark");
-//             });
+    //         // Click event to activate button
+    //         button.addEventListener("click", function () {
+    //             filterButtons.forEach(btn => {
+    //                 btn.classList.remove("active");
+    //                 btn.classList.replace("btn-success", "btn-outline-dark");
+    //             });
 
-//             this.classList.add("active");
-//             this.classList.replace("btn-outline-dark", "btn-success");
-//         });
-//     });
-// });
+    //             this.classList.add("active");
+    //             this.classList.replace("btn-outline-dark", "btn-success");
+    //         });
+    //     });
+    // });
+}
+
+
 
 // End
 

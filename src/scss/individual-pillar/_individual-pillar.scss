@@ -1,0 +1,402 @@
+/* Top Section */
+.header-section {
+    text-align: left;
+    padding: 50px 20px;
+}
+
+.top-container {
+    background: linear-gradient(90deg, #000, 90%, #7F6EF6);
+    color: white;
+}
+
+.highlight-dot {
+    color: #00ff99;
+}
+
+// .image-placeholder {
+//     background-image: url("banner1.jpeg");
+//     background-size: cover;
+//     /* Ensures the image covers the entire area */
+//     background-position: center;
+//     /* Centers the image */
+//     width: 100%;
+//     height: 700px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 00px;
+// }
+
+/* Client Section */
+.section-content {
+    padding: 50px;
+    padding-top: 0px;
+    border-radius: 15px;
+}
+
+.project-details {
+    color: #00c800;
+}
+
+.project-details h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-details span {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.scope-tags span {
+    font-size: 1rem;
+    padding-right: 15px;
+}
+
+.project-description {
+    margin-top: 30px;
+    line-height: 1.7;
+}
+
+.metric-label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.display-4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.row.text-left .col-md-4::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #eaeaea;
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+/* About section */
+// .section-title {
+//     font-size: 1.75rem;
+//     letter-spacing: 1px;
+//     font-weight: 600;
+//     // color: #000000;
+//     margin-bottom: 20px;
+// }
+
+/* Our Approach  */
+
+.methodology-step {
+    margin-bottom: 2rem;
+}
+
+.step-number {
+    color: #9c88ff;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.step-title {
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+.step-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Our core service */
+.core-services {
+    background-color: #242424;
+    color: white;
+}
+
+.core-services h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.core-services p.lead {
+    font-size: 1.2rem;
+}
+
+.pill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pill {
+    background-color: transparent;
+    color: #7F6EF6;
+    font-weight: 400;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    border: 1px solid #7F6EF6;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.pill:hover {
+    background-color: #7F6EF6;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Add rotation to individual pills */
+/* Add horizontal translation to individual pills */
+.pill:nth-child(1) {
+    transform: rotate(6deg) translateX(130px);
+    /* Move 10px to the right */
+}
+
+.pill:nth-child(2) {
+    transform: rotate(-3deg) translateX(-30px);
+    /* Move 15px to the left */
+}
+
+.pill:nth-child(3) {
+    transform: rotate(4deg) translateX(100px);
+    /* Move 5px to the right */
+}
+
+.pill:nth-child(4) {
+    transform: rotate(0deg) translateX(-50px);
+    /* No movement */
+}
+
+.pill:nth-child(5) {
+    transform: rotate(-3deg) translateX(-20px);
+    /* Move 10px to the left */
+}
+
+.pill:nth-child(6) {
+    transform: rotate(1deg) translateX(120px);
+    /* Move 7px to the right */
+}
+
+.pill:nth-child(7) {
+    transform: rotate(2deg) translateX(-5px);
+    /* Move 5px to the left */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pill-container {
+        align-items: left;
+    }
+}
+
+/* Responsive adjustments for tablet and mobile screens */
+@media (max-width: 768px) {
+    .pill-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pill {
+        transform: none;
+        margin: 10px;
+    }
+
+    .pill-container .pill:hover {
+        transform: scale(1.05);
+        /* Scale only on hover */
+    }
+
+    .pill:nth-child(1) {
+        transform: rotate(0deg);
+    }
+
+    .pill:nth-child(2) {
+        transform: rotate(0deg);
+    }
+
+    .pill:nth-child(3) {
+        transform: rotate(0deg);
+    }
+
+    .pill:nth-child(4) {
+        transform: rotate(0deg);
+    }
+
+    .pill:nth-child(5) {
+        transform: rotate(0deg);
+    }
+
+    .pill:nth-child(6) {
+        transform: rotate(0deg);
+    }
+
+    .pill:nth-child(7) {
+        transform: rotate(0deg);
+    }
+
+    .core-services {
+        background-color: #242424;
+        color: white;
+        padding: 10px;
+    }
+}
+
+/* Partners Section */
+.marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* The marquee effect for logos */
+.individual-pillar-marquee .marquee {
+    display: flex;
+    flex-wrap: wrap;
+    animation: scroll 15s linear infinite;
+}
+
+/* Default desktop view: 5 columns, 2 rows */
+// .client-logo {
+//     flex: 0 0 20%;
+//     text-align: center;
+//     padding: 10px;
+// }
+
+// .client-logo img {
+//     width: 100px;
+//     height: 100px;
+// }
+
+/* Tablet view: 3 columns, 2 rows */
+@media (max-width: 991px) {
+    // .client-logo {
+    //     flex: 0 0 33.33%;
+    // }
+}
+
+/* Mobile view: 1 column, 2 rows */
+@media (max-width: 576px) {
+    // .marquee {
+    //     display: flex;
+    //         flex-wrap: nowrap;
+    //         animation: scroll 15s linear infinite;
+    //     flex-direction: column;
+    // }
+
+    //     .individual-pillar-marquee .marquee {
+
+    // }
+
+    // .client-logo {
+    //     flex: 0 0 100%;
+    //     max-width: 100%;
+    // }
+
+    // .client-logo img {
+    //     width: 80px;
+    //     height: 80px;
+    // }
+}
+
+/* Marquee Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Vertis Experiance Section */
+.card {
+    border: 1px solid #000;
+    margin-bottom: 0;
+    padding: 30px;
+    border-radius: 0px;
+}
+
+.card-body {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.col-md-4 {
+    padding: 0;
+}
+
+// .card img {
+//     width: 100%;
+//     height: 250px;
+//     object-fit: cover;
+//     background-color: #ccc;
+// }
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+// .card-title {
+//     font-weight: bold;
+// }
+
+.card-text {
+    color: #666666;
+}
+
+.view-more {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-more:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 0.5em 0.75em;
+    font-weight: 500;
+}
+
+// .tags {
+//     border: 1px solid black;
+//     padding: 6px;
+//     border-radius: 30px;
+// }
+
+.view-all-btn {
+    background: #00ff6a;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.view-all-btn:hover {
+    background: black;
+    color: white;
+}

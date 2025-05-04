@@ -45,10 +45,10 @@
      align-items: center;
  }
 
-//  .client-logo img {
-//      width: 120px;
-//      height: 64px;
-//  }
+ //  .client-logo img {
+ //      width: 120px;
+ //      height: 64px;
+ //  }
 
  /* Tablet view: 3 columns, 2 rows */
  @media (max-width: 991px) {
@@ -60,47 +60,47 @@
 
 
 
-  /* Mobile Styles */
-  @media (max-width: 767px) {
-      .clients-section {
-          display: flex;
-          padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
-          flex-direction: column;
-          align-items: flex-end;
-          gap: var(--spacing-9, 40px);
-      }
+ /* Mobile Styles */
+ @media (max-width: 767px) {
+     .clients-section {
+         display: flex;
+         padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
+         flex-direction: column;
+         align-items: flex-end;
+         gap: var(--spacing-9, 40px);
+     }
 
-          .marquee {
-              display: grid;
-              grid-template-columns: repeat(4, 1fr);
-              row-gap: 16px;
-              column-gap: 8px;
-          }
-  }
+     .marquee {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         row-gap: 16px;
+         column-gap: 8px;
+     }
+ }
 
-   /* Mobile view: 1 column, 2 rows */
-   @media (max-width: 576px) {
-       .marquee {
-           flex-direction: column;
-       }
+ /* Mobile view: 1 column, 2 rows */
+ @media (max-width: 576px) {
+     //    .marquee {
+     //        flex-direction: column;
+     //    }
 
-       .client-logo {
-           flex: 0 0 100%;
-           max-width: 100%;
-       }
+     .client-logo {
+         flex: 0 0 100%;
+         max-width: 100%;
+     }
 
-    //    .client-logo img {
-    //        width: 80px;
-    //        height: 80px;
-    //    }
+     //    .client-logo img {
+     //        width: 80px;
+     //        height: 80px;
+     //    }
 
-           .marquee {
-               display: grid;
-               grid-template-columns: repeat(2, 1fr);
-               row-gap: 16px;
-               column-gap: 8px;
-           }
-   }
+     .marquee {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         row-gap: 16px;
+         column-gap: 8px;
+     }
+ }
 
  /* Marquee Animation */
  @keyframes scroll {

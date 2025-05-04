@@ -28,6 +28,10 @@ body {
    font-weight: 400;
  }
 
+ .black-transparent-button span {
+   font-weight: 400;
+ }
+
  /* Mobile Styles */
  @media (max-width: 767px) {
    .green-button {
@@ -299,7 +303,7 @@ body {
      font-style: normal;
      font-weight: 400;
      line-height: var(--font-line-height-D1, 116px);
-     margin-bottom: 80px;
+     margin-bottom: 40px;
 
    }
 

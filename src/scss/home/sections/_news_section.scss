@@ -1,6 +1,19 @@
+  .news-section .card-title {
+      color: var(--colours-text-text-primary-900, #242424);
+
+      /* Heading 2/Regular */
+      font-family: var(--font-family-title, "Bricolage Grotesque");
+      font-size: var(--font-size-H2, 36px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: var(--font-line-height-H2, 44px);
+      /* 122.222% */
+  }
+ 
  /* News Section */
  /* Mobile Styles */
  @media (max-width: 767px) {
+
      .news-section {
          display: flex;
          padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
@@ -35,10 +48,34 @@
          text-overflow: ellipsis;
          white-space: normal;
      }
+
+         .news-section .card-title {
+            color: var(--colours-text-text-primary-900, #242424);
+            
+                /* Heading 4/Regular */
+                font-family: var(--font-family-title, "Bricolage Grotesque");
+                font-size: var(--font-size-H4, 28px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--font-line-height-H4, 36px);
+                /* 128.571% */
+         }
  }
 
  /* Tablet Styles */
  @media (min-width: 768px) and (max-width: 991px) {
+
+    .news-section .card-title { 
+        color: var(--colours-text-text-primary-900, #242424);
+        
+            /* Heading 3/Regular */
+            font-family: var(--font-family-title, "Bricolage Grotesque");
+            font-size: var(--font-size-H3, 32px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--font-line-height-H3, 40px);
+            /* 125% */
+    }
      .news-section {
          display: flex;
          padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
@@ -78,7 +115,6 @@
          /* 122.222% */
      }
  }
-
 
  .news-title {
      font-size: 14px;

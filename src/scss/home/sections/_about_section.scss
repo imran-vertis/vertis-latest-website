@@ -1,114 +1,118 @@
+
+.homepage.about-section ,.about-page.about-section {
 /* Mobile Styles */
-@media (max-width: 767px) {
-    .about-section {
-        display: flex;
-        padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
-        align-items: center;
+    @media (max-width: 767px) {
+        & {
+            display: flex;
+            padding: var(--spacing-9, 40px) var(--spacing-5, 20px);
+            align-items: center;
+        }
+
+        .about-description {
+            color: var(--colours-text-text-primary-900, #242424);
+
+            /* Heading 2/Regular */
+            font-size: var(--font-size-H4, 28px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--font-line-height-H4, 36px);
+            /* 122.222% */
+        }
+
+        .display-4 {
+            color: var(--colours-text-text-primary-900, #242424);
+
+            /* Display 2/Regular */
+            font-size: var(--font-size-D2, 64px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--font-line-height-D2, 80px);
+            /* 125% */
+        }
     }
 
-    .about-description {
-        color: var(--colours-text-text-primary-900, #242424);
+    /* Tablet Styles */
+    @media (min-width: 768px) and (max-width: 991px) {
+        & {
+            display: flex;
+            padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
+            flex-direction: column;
+            align-items: flex-start;
+        }
 
-        /* Heading 2/Regular */
-        font-size: var(--font-size-H4, 28px);
+        .about-description {
+            color: var(--colours-text-text-primary-900, #242424);
+
+            /* Heading 2/Regular */
+            font-size: var(--font-size-H3, 32px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--font-line-height-H3, 40px);
+            /* 122.222% */
+        }
+
+        .display-4 {
+            color: var(--colours-text-text-primary-900, #242424);
+
+            /* Display 2/Regular */
+            font-size: var(--font-size-D2, 64px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--font-line-height-D2, 80px);
+            /* 125% */
+        }
+    }
+
+    /* Desktop Styles */
+    @media (min-width: 992px) {
+        & {
+            display: flex;
+            padding: var(--spacing-12, 80px) var(--spacing-11, 60px);
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .about-description {
+            color: var(--colours-text-text-primary-900, #242424);
+
+            /* Heading 2/Regular */
+            font-size: var(--font-size-H2, 36px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--font-line-height-H2, 44px);
+            /* 122.222% */
+        }
+
+        .display-4 {
+            color: var(--colours-text-text-primary-900, #242424);
+
+            /* Display 1/Regular */
+            font-size: var(--font-size-D1, 96px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--font-line-height-D1, 116px);
+            /* 120.833% */
+        }
+
+    }
+
+    .metric-label {
+        color: var(--colours-text-text-secondary-600, #797979);
+        font-family: 'Inter', sans-serif;
+        font-size: var(--font-size-P1, 16px);
         font-style: normal;
         font-weight: 400;
-        line-height: var(--font-line-height-H4, 36px);
-        /* 122.222% */
+        line-height: var(--font-line-height-P1, 24px);
+        /* 150% */
+        letter-spacing: 0.32px;
     }
 
-    .display-4 {
-        color: var(--colours-text-text-primary-900, #242424);
-
-        /* Display 2/Regular */
-        font-size: var(--font-size-D2, 64px);
-        font-style: normal;
-        font-weight: 400;
-        line-height: var(--font-line-height-D2, 80px);
-        /* 125% */
+    .row.text-left .col-md-4::before {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: #eaeaea;
+        width: 100%;
+        margin: 20px auto;
     }
-}
-
-/* Tablet Styles */
-@media (min-width: 768px) and (max-width: 991px) {
-    .about-section {
-        display: flex;
-        padding: var(--spacing-11, 60px) var(--spacing-9, 40px);
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .about-description {
-        color: var(--colours-text-text-primary-900, #242424);
-
-        /* Heading 2/Regular */
-        font-size: var(--font-size-H3, 32px);
-        font-style: normal;
-        font-weight: 400;
-        line-height: var(--font-line-height-H3, 40px);
-        /* 122.222% */
-    }
-
-    .display-4 {
-        color: var(--colours-text-text-primary-900, #242424);
-
-        /* Display 2/Regular */
-        font-size: var(--font-size-D2, 64px);
-        font-style: normal;
-        font-weight: 400;
-        line-height: var(--font-line-height-D2, 80px);
-        /* 125% */
-    }
-}
-
-/* Desktop Styles */
-@media (min-width: 992px) {
-    .about-section {
-        display: flex;
-        padding: var(--spacing-12, 80px) var(--spacing-11, 60px);
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .about-description {
-        color: var(--colours-text-text-primary-900, #242424);
-
-        /* Heading 2/Regular */
-        font-size: var(--font-size-H2, 36px);
-        font-style: normal;
-        font-weight: 400;
-        line-height: var(--font-line-height-H2, 44px);
-        /* 122.222% */
-    }
-
-    .display-4 {
-        color: var(--colours-text-text-primary-900, #242424);
-
-        /* Display 1/Regular */
-        font-size: var(--font-size-D1, 96px);
-        font-style: normal;
-        font-weight: 400;
-        line-height: var(--font-line-height-D1, 116px);
-        /* 120.833% */
-    }
-
-}
-
-.metric-label {
-    color: var(--colours-text-text-secondary-600, #797979);
-    font-family: 'Inter', sans-serif;
-    font-size: var(--font-size-P1, 16px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--font-line-height-P1, 24px); /* 150% */
-    letter-spacing: 0.32px;
-}
-
-.row.text-left .col-md-4::before {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: #eaeaea;
-    width: 100%;
-    margin: 20px auto;
 }

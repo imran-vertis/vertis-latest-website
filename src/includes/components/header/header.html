@@ -1,6 +1,6 @@
 <!-- Navbar -->
 <header>
-  <nav class="navbar navbar-expand-lg" style="background-color: white">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid d-flex align-items-center justify-content-between"
       style="border: 1px solid black; padding-left: 0px">
       <!-- Logo -->
@@ -25,12 +25,10 @@
       <div class="collapse navbar-collapse border-start-nav" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a href="/pages/about" class="nav-link">ABOUT</a></li>
-          <li class="nav-item"><a href="/pages/works" class="nav-link">WORKS</a></li>
 
           <!-- Dropdown -->
           <li class="nav-item dropdown position-static">
-            <a href="/pages/" class="nav-link" id="vertisGroupDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-              VERTIS GROUP
+            <a href="/pages/group" class="nav-link" id="vertisGroupDropdown" data-bs-toggle="dropdown" aria-expanded="false">GROUP
               <img src="/assets/images/icons/24/Accordion-down.svg" alt="Dropdown Icon" id="dropdownIcon"
                 class="dropdown-icon" />
             </a>
@@ -63,12 +61,13 @@
                 </div>
               </div>
               <div class="dropdown-footer">
-                <a href="#" class="btn btn-success">View All Services</a>
+                <a href="#" class="btn btn-success">View Vertis Group</a>
               </div>
             </div>
           </li>
 
-          <li class="nav-item"><a href="#" class="nav-link">NEWS</a></li>
+          <li class="nav-item"><a href="/pages/works" class="nav-link">WORKS</a></li>
+          <li class="nav-item"><a href="/pages/news" class="nav-link">NEWS</a></li>
           <li class="nav-item careers-link border-start-nav">
             <a href="/pages/career" class="nav-link pl-3">CAREERS</a>
           </li>
@@ -83,28 +82,4 @@
       </ul>
     </div>
   </nav>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      let dropdown = document.getElementById("vertisGroupDropdown");
-      let dropdownIcon = document.getElementById("dropdownIcon");
-      let dropdownMenu = dropdown.nextElementSibling;
-
-      dropdown.parentElement.addEventListener("mouseenter", function () {
-        dropdownIcon.src = "/assets/images/icons/24/Accordion-up.svg";
-        dropdownMenu.classList.add("show");
-        dropdown.setAttribute("aria-expanded", "true");
-      });
-
-      dropdown.parentElement.addEventListener("mouseleave", function () {
-        dropdownIcon.src = "/assets/images/icons/24/Accordion-down.svg";
-        dropdownMenu.classList.remove("show");
-        dropdown.setAttribute("aria-expanded", "false");
-      });
-
-      dropdown.addEventListener("click", function () {
-        window.location.href = "/pages/vertis-group/"; // Navigate on second click
-      });
-    });
-  </script>
 </header>

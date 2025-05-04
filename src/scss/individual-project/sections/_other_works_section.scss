@@ -117,41 +117,41 @@
     padding-bottom: 12px;
 }
 
-.tags span {
-    border-radius: 100px;
-    border: 1px solid var(--Buttons-Tabs-tab-border, #242424);
-    padding: 5px 10px !important;
-    margin-right: 5px;
-    padding: var(--spacing-1, 4px);
-    align-items: center;
-    color: var(--Buttons-Tabs-tab-fg, #242424);
-    font-family: var(--font-family-body, inter);
-    font-size: var(--font-size-P2, 14px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--font-line-height-P2, 20px);
-    /* 142.857% */
-}
+// .tags span {
+//     border-radius: 100px;
+//     border: 1px solid var(--Buttons-Tabs-tab-border, #242424);
+//     padding: 5px 10px !important;
+//     margin-right: 5px;
+//     padding: var(--spacing-1, 4px);
+//     align-items: center;
+//     color: var(--Buttons-Tabs-tab-fg, #242424);
+//     font-family: var(--font-family-body, inter);
+//     font-size: var(--font-size-P2, 14px);
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: var(--font-line-height-P2, 20px);
+//     /* 142.857% */
+// }
 
-.tags {
-    margin-bottom: 24px;
-}
+// .tags {
+//     margin-bottom: 24px;
+// }
 
-.view-more-link {
-    color: var(--colours-text-text-primary-900, #242424);
-    font-family: var(--font-family-title, "BricolageGrotesque");
-    font-size: var(--font-size-H6, 20px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--font-line-height-H6, 28px); /* 140% */
-    letter-spacing: 0.8px;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    text-underline-position: from-font;
-}
+// .view-more-link {
+//     color: var(--colours-text-text-primary-900, #242424);
+//     font-family: var(--font-family-title, "BricolageGrotesque");
+//     font-size: var(--font-size-H6, 20px);
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: var(--font-line-height-H6, 28px); /* 140% */
+//     letter-spacing: 0.8px;
+//     text-decoration-line: underline;
+//     text-decoration-style: solid;
+//     text-decoration-skip-ink: auto;
+//     text-decoration-thickness: auto;
+//     text-underline-offset: auto;
+//     text-underline-position: from-font;
+// }
 
 .badge {
     font-size: 0.85rem;
