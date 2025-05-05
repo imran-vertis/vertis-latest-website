@@ -30,14 +30,11 @@
 
     .award-description {
         color: var(--colours-text-text-primary-900, #242424);
-
-        /* Heading 3/Regular */
         font-family: var(--font-family-title, "BricolageGrotesque");
         font-size: var(--font-size-H3, 32px);
         font-style: normal;
         font-weight: 400;
         line-height: var(--font-line-height-H3, 40px);
-        /* 125% */
     }
 }
 
@@ -75,7 +72,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: var(--font-line-height-P1, 24px);
-    /* 150% */
     letter-spacing: 0.32px;
 }
 
@@ -86,7 +82,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: var(--font-line-height-H4, 36px);
-    /* 128.571% */
 }
 
 .award-web {
@@ -96,7 +91,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: var(--font-line-height-P1, 24px);
-    /* 150% */
     letter-spacing: 0.32px;
 }
 

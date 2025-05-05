@@ -9,7 +9,7 @@
         background: var(--Colours-Background-bg-primary, #FFF);
     }
 
-    .heading {
+        .other-works-section.individual-project .heading {
         color: var(--colours-text-text-primary-900, #242424);
         font-family: var(--font-family-title, "BricolageGrotesque");
         font-size: var(--font-size-H3, 32px);
@@ -33,7 +33,7 @@
         background: var(--Colours-Background-bg-primary, #FFF);
     }
 
-    .heading {
+        .other-works-section.individual-project .heading {
         color: var(--colours-text-text-primary-900, #242424);
         font-family: var(--font-family-title, "BricolageGrotesque");
         font-size: var(--font-size-H2, 36px);
@@ -57,7 +57,7 @@
         background: var(--Colours-Background-bg-primary, #FFF);
     }
 
-    .heading {
+        .other-works-section.individual-project .heading {
         color: var(--colours-text-text-primary-900, #242424);
         font-family: var(--font-family-title, "BricolageGrotesque");
         font-size: var(--font-size-H2, 36px);
@@ -117,66 +117,31 @@
     padding-bottom: 12px;
 }
 
-// .tags span {
-//     border-radius: 100px;
-//     border: 1px solid var(--Buttons-Tabs-tab-border, #242424);
-//     padding: 5px 10px !important;
-//     margin-right: 5px;
-//     padding: var(--spacing-1, 4px);
-//     align-items: center;
-//     color: var(--Buttons-Tabs-tab-fg, #242424);
-//     font-family: var(--font-family-body, inter);
-//     font-size: var(--font-size-P2, 14px);
-//     font-style: normal;
-//     font-weight: 400;
-//     line-height: var(--font-line-height-P2, 20px);
-//     /* 142.857% */
-// }
-
-// .tags {
-//     margin-bottom: 24px;
-// }
-
-// .view-more-link {
-//     color: var(--colours-text-text-primary-900, #242424);
-//     font-family: var(--font-family-title, "BricolageGrotesque");
-//     font-size: var(--font-size-H6, 20px);
-//     font-style: normal;
-//     font-weight: 400;
-//     line-height: var(--font-line-height-H6, 28px); /* 140% */
-//     letter-spacing: 0.8px;
-//     text-decoration-line: underline;
-//     text-decoration-style: solid;
-//     text-decoration-skip-ink: auto;
-//     text-decoration-thickness: auto;
-//     text-underline-offset: auto;
-//     text-underline-position: from-font;
-// }
-
-.badge {
-    font-size: 0.85rem;
-    padding: 0.5em 0.75em;
-    font-weight: 500;
-}
-
 @media (min-width: 992px) {
-    .col-md-4:nth-child(2) .other-works-section.individual-project .card {
+    .other-works-section.individual-project .col-md-4:nth-child(2) .card {
         border-left: none;
         border-right: none;
     }
 }
 
-.swiper-container {
+.other-works-section.individual-project .swiper-container {
     overflow: hidden;
+    height: 100%;
+    padding-bottom: 20px;
+
+    .card {
+        max-width: 300px;
+    }
 }
 
-.swiper-slide {
+.other-works-section.individual-project .swiper-slide {
     display: flex;
     justify-content: center;
+    text-align: left;
 }
 
 @media (min-width: 992px) {
-    .swiper-container {
+    .other-works-section.individual-project .swiper-container {
         overflow: visible;
     }
 }

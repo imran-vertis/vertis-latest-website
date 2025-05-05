@@ -45,20 +45,12 @@
      align-items: center;
  }
 
- //  .client-logo img {
- //      width: 120px;
- //      height: 64px;
- //  }
-
  /* Tablet view: 3 columns, 2 rows */
  @media (max-width: 991px) {
      .client-logo {
          flex: 0 0 33.33%;
      }
  }
-
-
-
 
  /* Mobile Styles */
  @media (max-width: 767px) {
@@ -80,19 +72,11 @@
 
  /* Mobile view: 1 column, 2 rows */
  @media (max-width: 576px) {
-     //    .marquee {
-     //        flex-direction: column;
-     //    }
 
      .client-logo {
          flex: 0 0 100%;
          max-width: 100%;
      }
-
-     //    .client-logo img {
-     //        width: 80px;
-     //        height: 80px;
-     //    }
 
      .marquee {
          display: grid;

@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     height: 50vh;
-    background: linear-gradient(90deg, #003534 50%, #1ce783 100%);
+    background: radial-gradient(115.75% 149.81% at 100% -74.49%, #1CE783 0%, #003534 100%), #FFF;
     color: white;
     text-align: left;
     padding-left: 90px;
@@ -22,8 +22,12 @@
 }
 
 .career-hero-section .career-hero-content p {
-    font-size: 5rem;
+    color: var(--Colours-Text-text-white, #FFF);
+    font-family: var(--font-family-title, "Bricolage Grotesque");
+    font-size: 1.5rem;
+    font-style: normal;
     font-weight: 400;
+    line-height: var(--font-line-height-H4, 36px);
 }
 
 /* Media query for tablet and mobile views */
@@ -51,21 +55,30 @@
     font-size: 3rem;
     font-weight: 300;
     padding-top: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
-.why-vertis p.lead {
-    font-size: 1.2rem;
+.why-vertis .lead {
+    color: var(--Colours-Text-text-white, #FFF);
+    font-family: var(--font-family-body, Inter);
+    font-size: var(--font-size-P1, 16px);
+    font-style: normal;
+    line-height: var(--font-line-height-P1, 24px);
+    letter-spacing: 0.32px;
+
+    .bold {
+        font-weight: bold;
+    }
 }
 
-.pill-container {
+.why-vertis .pill-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.pill {
+.why-vertis .pill {
     background-color: transparent;
     color: #1CE783;
     font-weight: 400;
@@ -77,68 +90,75 @@
     transition: all 0.3s ease;
 }
 
-.pill:hover {
+.why-vertis .pill:hover {
     background-color: #1CE783;
     color: black;
     transform: scale(1.05);
 }
 
 /* Add rotation to individual pills */
-.pill:nth-child(1) {
+.why-vertis .pill:nth-child(1) {
     transform: rotate(6deg)translateX(-80px);
+    color: #242424;
+    background-color: #1CE783;
 }
 
-.pill:nth-child(2) {
+.why-vertis .pill:nth-child(1):hover {
+    background-color: transparent;
+    color: #1CE783;
+}
+
+.why-vertis .pill:nth-child(2) {
     transform: rotate(-3deg)translateX(-40px);
 }
 
-.pill:nth-child(3) {
+.why-vertis .pill:nth-child(3) {
     transform: rotate(3deg)translateX(-100px);
 }
 
-.pill:nth-child(4) {
+.why-vertis .pill:nth-child(4) {
     transform: rotate(-5deg)translateX(0px);
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .pill-container {
+    .why-vertis .pill-container {
         align-items: left;
     }
 }
 
 /* Responsive adjustments for tablet and mobile screens */
 @media (max-width: 768px) {
-    .pill-container {
+    .why-vertis .pill-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 
-    .pill {
+    .why-vertis .pill {
         transform: none;
         margin: 10px;
     }
 
-    .pill-container .pill:hover {
+    .why-vertis .pill-container .why-vertis .pill:hover {
         transform: scale(1.05);
         /* Scale only on hover */
     }
 
-    .pill:nth-child(1) {
+    .why-vertis .pill:nth-child(1) {
         transform: rotate(0deg);
     }
 
-    .pill:nth-child(2) {
+    .why-vertis .pill:nth-child(2) {
         transform: rotate(0deg);
     }
 
-    .pill:nth-child(3) {
+    .why-vertis .pill:nth-child(3) {
         transform: rotate(0deg);
     }
 
-    .pill:nth-child(4) {
+    .why-vertis .pill:nth-child(4) {
         transform: rotate(0deg);
     }
 
@@ -150,21 +170,39 @@
 }
 
 /* Jobs Section */
-.job-card {
+.explore-jobs .job-card {
     border: 1px solid #0d0d0d;
     padding: 20px;
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.job-card:hover {
+.explore-jobs .job-card:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.explore-jobs .header {
+    color: var(--colours-text-text-primary-900, #242424);
+        font-family: var(--font-family-title, "Bricolage Grotesque");
+        font-size: var(--font-size-H2, 36px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: var(--font-line-height-H2, 44px);
+}
+
+.explore-jobs .sub-header{
+    color: var(--colours-text-text-primary-900, #242424);
+        font-family: var(--font-family-title, "Bricolage Grotesque");
+        font-size: var(--font-size-H4, 20px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-H4, 36px);
+
 }
 
 .explore-jobs .job-card-list {
     background-color: #ffffff;
     color: #000000;
     padding: 20px;
-    // margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -289,17 +327,19 @@
 .email-us-section {
     .apply-now-btn {
         border-radius: 50px;
-        padding: 10px 5px 10px 20px;
         background-color: white;
         border: 1px solid #000000;
         color: black;
         font-weight: 500;
         transition: all 0.3s ease;
-    }
-
-    .apply-now-btn:hover {
-        background-color: #00ff87;
-        color: black;
+        padding: 10px 10px 10px 20px;
+        
+            .apply-now-btn-icon {
+                padding-left: 5px;
+                img {
+                        width: 30px;
+                    }
+            }
     }
 
     .explore-jobs .apply-now-btn-icon {
@@ -310,8 +350,6 @@
         margin-left: 7px;
     }
 }
-
-
 
 .pagination {
     justify-content: center;
@@ -361,7 +399,7 @@
 .explore-jobs .form-select {
     border-radius: 30px;
     max-width: 450px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     padding: 10px 15px;
     transition: border-color 0.3s ease;
 }
@@ -375,8 +413,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // margin-left: 475px;
-    // margin-right: 475px;
     background-color: #f4f4f4;
     border-radius: 40px;
     padding-top: 10px;
@@ -495,7 +531,11 @@
 .email-us-section p {
     font-size: 1.1rem;
     margin-bottom: 30px;
-    color: #6c757d;
+    color: #242424;
+    font-family: var(--font-family-title, "Bricolage Grotesque");
+    font-weight: 400;
+    width: 70%;
+    margin: 0 auto 1rem;
 }
 
 .email-button {
@@ -623,7 +663,6 @@
     /* Add "+" icon when accordion is collapsed */
     .accordion-button.collapsed::before {
         content: '';
-        // background-image: url('assets/icons/24/Plus.svg');
         background-image: url('../../assets/images/icons/24/Plus.svg');
         background-size: 24px 24px;
         width: 24px;
@@ -638,7 +677,6 @@
     /* Add "-" icon when accordion is expanded */
     .accordion-button:not(.collapsed)::before {
         content: '';
-        // background-image: url('assets/icons/24/Minus.svg');
         background-image: url('../../assets/images/icons/24/Minus.svg');
         background-size: 24px 24px;
         width: 24px;

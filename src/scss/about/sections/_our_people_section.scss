@@ -120,7 +120,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: var(--font-line-height-H5, 32px);
-    /* 133.333% */
 }
 
 .card-text {
@@ -130,7 +129,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: var(--font-line-height-P1, 24px);
-    /* 150% */
     letter-spacing: 0.32px;
 }
 
@@ -141,7 +139,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: var(--font-line-height-H6, 28px);
-    /* 140% */
     letter-spacing: 0.8px;
 }
 
@@ -163,7 +160,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 315px;
 }
 
 .swiper-slide img {

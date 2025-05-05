@@ -16,8 +16,8 @@
         /* 128.571% */
     }
 
-    .filter-buttons {
-        margin-bottom: 80px;
+    .filter-buttons , .swiper-container {
+        margin-bottom: 60px;
     }
 
     .filter-buttons .btn {
@@ -56,18 +56,6 @@
 
     }
 
-    // .card img {
-    //     width: 100%;
-    //     height: auto;
-    //     object-fit: cover;
-    //     align-items: center;
-    //     background-color: #ccc;
-    // }
-
-    // .card img.icon {
-    //     background-color: #fff;
-    // }
-
     .card-body {
         padding-left: 20px;
         padding-right: 0px;
@@ -83,7 +71,9 @@
     }
 
     .tags {
-        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .tags span {

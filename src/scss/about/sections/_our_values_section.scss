@@ -45,7 +45,6 @@
      font-style: normal;
      font-weight: 600;
      line-height: var(--font-line-height-H2, 44px);
-     /* 122.222% */
  }
 
 
@@ -56,7 +55,6 @@
      font-style: normal;
      font-weight: 400;
      line-height: var(--font-line-height-P1, 24px);
-     /* 150% */
      letter-spacing: 0.32px;
  }
 
@@ -102,28 +100,22 @@
  .flip-card-front {
      background-color: #ffffff;
      color: var(--colours-text-text-primary-900, #242424);
-
-     /* Heading 4/Regular */
      font-family: var(--font-family-title, "BricolageGrotesque");
      font-size: var(--font-size-H4, 28px);
      font-style: normal;
      font-weight: 400;
      line-height: var(--font-line-height-H4, 36px);
      padding: var(--spacing-6, 24px);
-     /* 128.571% */
  }
 
  .flip-card-back {
      background-color: #00ff91;
      color: var(--colours-text-text-primary-900, #242424);
-
-     /* Paragraph 1/Regular */
      font-family: var(--font-family-body, inter);
      font-size: var(--font-size-P1, 16px);
      font-style: normal;
      font-weight: 400;
      line-height: var(--font-line-height-P1, 24px);
-     /* 150% */
      letter-spacing: 0.32px;
      transform: rotateY(180deg);
      padding: var(--spacing-6, 24px);

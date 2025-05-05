@@ -73,12 +73,12 @@
 
 .office-address {
     color: var(--colours-text-text-secondary-600, #797979);
-font-family: var(--font-family-body, inter);
-font-size: var(--font-size-P1, 16px);
-font-style: normal;
-font-weight: 400;
-line-height: var(--font-line-height-P1, 24px); /* 150% */
-letter-spacing: 0.32px;
+    font-family: var(--font-family-body, inter);
+    font-size: var(--font-size-P1, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--font-line-height-P1, 24px);
+    letter-spacing: 0.32px;
 }
 
 .office-country {
@@ -88,7 +88,6 @@ letter-spacing: 0.32px;
     font-style: normal;
     font-weight: 400;
     line-height: var(--font-line-height-H5, 32px);
-    /* 133.333% */
 }
 
 .divider {

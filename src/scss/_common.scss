@@ -384,8 +384,6 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-  //  margin-left: 475px;
-  //  margin-right: 475px;
    background-color: #f4f4f4;
    border-radius: 40px;
    padding-top: 10px;
@@ -446,6 +444,7 @@ body {
      margin-right: 100px;
      padding-top: 8px;
      padding-bottom: 8px;
+     width: auto;
    }
 
    .pagination-custom .pagination-arrow,

@@ -1,31 +1,56 @@
 /* Top Section */
-.header-section {
-    text-align: left;
-    padding: 50px 20px;
+.individual-pillar-hero-section {
+
+    .header-section {
+        text-align: left;
+        padding: 50px 20px;
+
+        .header {
+            font-size: 76px;
+        }
+
+        .sub-header {
+            color: var(--Colours-Text-text-white, #FFF);
+            text-align: center;
+            font-family: var(--font-family-title, "Bricolage Grotesque");
+            font-size: var(--font-size-H4, 24px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--font-line-height-H4, 36px);
+        }
+    }
+
+    .top-container {
+        background: linear-gradient(90deg, #000, 90%, #7F6EF6);
+        color: white;
+    }
+
+    .highlight-dot {
+        color: #00ff99;
+    }
 }
 
-.top-container {
-    background: linear-gradient(90deg, #000, 90%, #7F6EF6);
-    color: white;
-}
+.our-approach,
+.our-methodology {
+    .section-title {
+        color: #242424;
+        font-family: var(--font-family-title, "Bricolage Grotesque");
+        font-size: var(--font-size-H2, 26px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: var(--font-line-height-H2, 44px);
+    }
 
-.highlight-dot {
-    color: #00ff99;
+    .section-copy {
+        color: #242424;
+        font-family: var(--font-family-body, Inter);
+        font-size: var(--font-size-P1, 14px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-P1, 24px);
+        letter-spacing: 0.32px;
+    }
 }
-
-// .image-placeholder {
-//     background-image: url("banner1.jpeg");
-//     background-size: cover;
-//     /* Ensures the image covers the entire area */
-//     background-position: center;
-//     /* Centers the image */
-//     width: 100%;
-//     height: 700px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin: 00px;
-// }
 
 /* Client Section */
 .section-content {
@@ -80,16 +105,6 @@
     width: 100%;
     margin: 20px auto;
 }
-
-
-/* About section */
-// .section-title {
-//     font-size: 1.75rem;
-//     letter-spacing: 1px;
-//     font-weight: 600;
-//     // color: #000000;
-//     margin-bottom: 20px;
-// }
 
 /* Our Approach  */
 
@@ -159,7 +174,14 @@
 /* Add horizontal translation to individual pills */
 .pill:nth-child(1) {
     transform: rotate(6deg) translateX(130px);
+    background-color: #7F6EF6;
+    color: white;
     /* Move 10px to the right */
+}
+
+.pill:nth-child(1):hover {
+    background-color: transparent;
+    color: #7F6EF6;
 }
 
 .pill:nth-child(2) {
@@ -263,55 +285,18 @@
     flex-wrap: wrap;
 }
 
-/* The marquee effect for logos */
-.individual-pillar-marquee .marquee {
-    display: flex;
-    flex-wrap: wrap;
-    animation: scroll 15s linear infinite;
+.individual-pillar-marquee .marquee .header {
+    color: var(--colours-text-text-primary-900, #242424);
+
+    /* Heading 2/Semibold */
+    font-family: var(--font-family-title, "Bricolage Grotesque");
+    font-size: var(--font-size-H2, 32px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--font-line-height-H2, 44px);
+    /* 122.222% */
 }
 
-/* Default desktop view: 5 columns, 2 rows */
-// .client-logo {
-//     flex: 0 0 20%;
-//     text-align: center;
-//     padding: 10px;
-// }
-
-// .client-logo img {
-//     width: 100px;
-//     height: 100px;
-// }
-
-/* Tablet view: 3 columns, 2 rows */
-@media (max-width: 991px) {
-    // .client-logo {
-    //     flex: 0 0 33.33%;
-    // }
-}
-
-/* Mobile view: 1 column, 2 rows */
-@media (max-width: 576px) {
-    // .marquee {
-    //     display: flex;
-    //         flex-wrap: nowrap;
-    //         animation: scroll 15s linear infinite;
-    //     flex-direction: column;
-    // }
-
-    //     .individual-pillar-marquee .marquee {
-
-    // }
-
-    // .client-logo {
-    //     flex: 0 0 100%;
-    //     max-width: 100%;
-    // }
-
-    // .client-logo img {
-    //     width: 80px;
-    //     height: 80px;
-    // }
-}
 
 /* Marquee Animation */
 @keyframes scroll {
@@ -325,78 +310,65 @@
 }
 
 /* Vertis Experiance Section */
-.card {
-    border: 1px solid #000;
-    margin-bottom: 0;
-    padding: 30px;
-    border-radius: 0px;
-}
+.vertis-experience {
 
-.card-body {
-    padding-left: 0px;
-    padding-right: 0px;
-}
+    .card {
+        border: 1px solid var(--Colours-Border-border-primary, #242424);
+        margin-bottom: 0;
+        padding: 32px;
+        border-radius: 0px;
+    }
 
-.col-md-4 {
-    padding: 0;
-}
 
-// .card img {
-//     width: 100%;
-//     height: 250px;
-//     object-fit: cover;
-//     background-color: #ccc;
-// }
+    .card-body {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 
-h2 {
-    font-weight: bold;
-    font-size: 2rem;
-}
+    .col-md-4 {
+        padding: 0;
+    }
 
-// .card-title {
-//     font-weight: bold;
-// }
+    h2 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
 
-.card-text {
-    color: #666666;
-}
+    .card-text {
+        color: #666666;
+    }
 
-.view-more {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .view-more {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-.view-more:hover {
-    text-decoration: underline;
-}
+    .view-more:hover {
+        text-decoration: underline;
+    }
 
-.badge {
-    font-size: 0.85rem;
-    padding: 0.5em 0.75em;
-    font-weight: 500;
-}
+    .badge {
+        font-size: 0.85rem;
+        padding: 0.5em 0.75em;
+        font-weight: 500;
+    }
 
-// .tags {
-//     border: 1px solid black;
-//     padding: 6px;
-//     border-radius: 30px;
-// }
+    .view-all-btn {
+        background: #1CE783;
+        border: 1px solid black;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        font-family: var(--font-family-title, "Bricolage Grotesque");
+        font-size: var(--font-size-H5, 20px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-H5, 32px);
+        /* 133.333% */
+    }
 
-.view-all-btn {
-    background: #00ff6a;
-    border: 1px solid black;
-    color: black;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 25px;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-}
-
-.view-all-btn:hover {
-    background: black;
-    color: white;
 }

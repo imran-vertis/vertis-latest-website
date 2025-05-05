@@ -214,7 +214,7 @@
          overflow: hidden;
          transition: opacity 0.3s ease, max-height 0.3s ease;
          color: var(--Colours-Text-text-white, #FFF);
-        font-family: 'Inter', sans-serif;
+         font-family: 'Inter', sans-serif;
          /* Paragraph 1/Regular */
          font-size: var(--font-size-P1, 16px);
          font-style: normal;
@@ -240,5 +240,3 @@
      opacity: 1;
      max-height: 200px;
  }
-
- 

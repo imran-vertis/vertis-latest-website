@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!dropdown) return;
 
     const dropdownIcon = document.getElementById("dropdownIcon");
-    const dropdownMenu = dropdown.nextElementSibling;
-    const parent = dropdown.parentElement;
+    const dropdownMenu = dropdown?.nextElementSibling;
+    const parent = dropdown?.parentElement;
 
     if (!dropdownIcon || !dropdownMenu || !parent) return;
 
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // contact.js - Start
 document.addEventListener("DOMContentLoaded", function () {
 
-if (document.querySelectorAll(".form-control")) {
+    if (document.querySelectorAll(".contact-section .form-control").length > 0) {
     
     const inputs = document.querySelectorAll(".form-control");
     inputs.forEach((input) => {
@@ -51,17 +51,21 @@ if (document.querySelectorAll(".form-control")) {
 // our_people.js - Start
 
 document.addEventListener("DOMContentLoaded", () => {
+
     const peopleSection = document.querySelector("section.our-people-section");
     if (!peopleSection) return;
 
-    new Swiper(".swiper", {
-        slidesPerView: 2,
+    new Swiper(".swiper-container", {
+        slidesPerView: 1.5,
         spaceBetween: 20,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
         breakpoints: {
+            565: {
+                slidesPerView: 2,
+            },
             992: {
                 slidesPerView: 3,
             },
@@ -75,173 +79,115 @@ document.addEventListener("DOMContentLoaded", () => {
 // End
 
 
-
-// news.js - Start
-
-// if (document.querySelectorAll(".news-title-text")) {
-
-//     // document.addEventListener("DOMContentLoaded", function () {
-//     //     let newsTitles = document.querySelectorAll(".news-title-text");
-
-//     //     newsTitles.forEach((title) => {
-//     //         let words = title.innerText.trim().split(" ");
-
-//     //         if (words.length > 10) {
-//     //             // If more than 10 words, truncate and add "..."
-//     //             title.innerText = words.slice(0, 10).join(" ") + "...";
-//     //         } else {
-//     //             // If less than 10 words, add non-breaking spaces (&nbsp;) for consistent height
-//     //             let spacesNeeded = 10 - words.length;
-//     //             for (let i = 0; i < spacesNeeded; i++) {
-//     //                 title.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; // Adds visible spaces
-//     //             }
-//     //         }
-//     //     });
-//     // });
-// }
-
-
-// End
-
-
 // other_works.js - Start
 
-// document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-//     if (window.innerWidth < 992) {
-//         new Swiper(".swiper-container", {
-//             slidesPerView: 1,
-//             spaceBetween: 10,
-//             breakpoints: {
-//                 768: {
-//                     slidesPerView: 2, // Show 2 cards on tablets
-//                     spaceBetween: 15
-//                 },
-//                 992: {
-//                     slidesPerView: 3, // Disable Swiper on desktops
-//                     enabled: false
-//                 }
-//             },
-//             navigation: {
-//                 nextEl: ".swiper-button-next",
-//                 prevEl: ".swiper-button-prev",
-//             },
-//             pagination: {
-//                 el: ".swiper-pagination",
-//                 clickable: true,
-//             },
-//         });
-//     }
-// });
+    if (document.querySelector(".other-works-section.individual-project")) {
+        
+    
+        new Swiper(".swiper-container", {
+            slidesPerView: 1.5,
+            spaceBetween: 15,
+            breakpoints: {
+                556: {
+                    slidesPerView: 1.8, // Show 2 cards on tablets
+                    spaceBetween: 15
+                },
+                992: {
+                    slidesPerView: 3, // Disable Swiper on desktops
+                    enabled: false
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+    
+});
 
 // End
 
 
 // testimonials.js - Start
 
-if (document.querySelector(".testimonial-slider")) {
+document.addEventListener("DOMContentLoaded", () => {
+    const slider = document.querySelector(".testimonial-slider");
+    const nextBtn = document.querySelector(".next-btn");
+    const prevBtn = document.querySelector(".prev-btn");
 
-    document.addEventListener("DOMContentLoaded", function () {
-
-        const slider = document.querySelector(".testimonial-slider");
-        const nextBtn = document.querySelector(".next-btn");
-        const prevBtn = document.querySelector(".prev-btn");
-
-        if (!slider || !nextBtn || !prevBtn) return;
-
+    if (slider && nextBtn && prevBtn) {
         let translateX = 0;
-        const cardWidth = document.querySelector(".testimonial-card")?.offsetWidth + 20; // Add margin
+        const cardWidth = document.querySelector(".testimonial-card")?.offsetWidth + 20;
         const totalCards = document.querySelectorAll(".testimonial-card").length;
-        const visibleCards = Math.floor(slider?.parentElement?.offsetWidth / cardWidth); // Dynamic count
+        const visibleCards = Math.floor(slider?.parentElement?.offsetWidth / cardWidth);
 
         nextBtn.addEventListener("click", () => {
             if (Math.abs(translateX) < cardWidth * (totalCards - visibleCards)) {
-                translateX -= cardWidth; // Move one card width at a time
+                translateX -= cardWidth;
                 slider.style.transform = `translateX(${translateX}px)`;
             }
         });
 
         prevBtn.addEventListener("click", () => {
             if (translateX < 0) {
-                translateX += cardWidth; // Move back one card width
+                translateX += cardWidth;
                 slider.style.transform = `translateX(${translateX}px)`;
             }
         });
-    });
+    }
 
-    document.addEventListener("DOMContentLoaded", function () {
-        function moveNavButtons() {
-            const navButtons = document.querySelector(".nav-buttons");
-            const sliderWrapper = document.querySelector(".testimonial-slider-wrapper");
-            const colMd3 = document.querySelector(".buttons");
+    const moveNavButtons = () => {
+        const navButtons = document.querySelector(".nav-buttons");
+        const sliderWrapper = document.querySelector(".testimonial-slider-wrapper");
+        const colMd3 = document.querySelector(".buttons");
 
-            if (!navButtons || !sliderWrapper || !colMd3) return; // Prevent errors if elements are missing
+        if (!navButtons || !sliderWrapper || !colMd3) return;
 
-            if (window.innerWidth <= 768) {
-                // Move nav-buttons below the slider on mobile
-                if (!sliderWrapper.contains(navButtons)) {
-                    sliderWrapper.appendChild(navButtons);
-                }
-            } else {
-                // Restore nav-buttons back to the left section on tablets & desktops
-                if (!colMd3.contains(navButtons)) {
-                    colMd3.appendChild(navButtons);
-                }
+        if (window.innerWidth <= 768) {
+            if (!sliderWrapper.contains(navButtons)) {
+                sliderWrapper.appendChild(navButtons);
+            }
+        } else {
+            if (!colMd3.contains(navButtons)) {
+                colMd3.appendChild(navButtons);
             }
         }
+    };
 
-        // Run function on page load
-        moveNavButtons();
+    moveNavButtons();
+    window.addEventListener("resize", moveNavButtons);
 
-        // Run function on window resize
-        window.addEventListener("resize", moveNavButtons);
+    const MAX_WORDS = 30;
+    const testimonialTexts = document.querySelectorAll(".testimonial-text");
+    testimonialTexts.forEach((title) => {
+        const words = title.innerText.trim().split(" ");
+        if (words.length > MAX_WORDS) {
+            title.innerText = words.slice(0, MAX_WORDS).join(" ") + "...";
+        } else {
+            const spacesNeeded = MAX_WORDS - words.length;
+            title.innerHTML += "&nbsp;".repeat(spacesNeeded * 5);
+        }
     });
+});
 
-    document.addEventListener("DOMContentLoaded", function () {
-        let testimonialTexts = document.querySelectorAll(".testimonial-text");
 
-        testimonialTexts.forEach((title) => {
-            let words = title.innerText.trim().split(" ");
-
-            if (words.length > 30) {
-                // If more than 10 words, truncate and add "..."
-                title.innerText = words.slice(0, 30).join(" ") + "...";
-            } else {
-                // If less than 10 words, add non-breaking spaces (&nbsp;) for consistent height
-                let spacesNeeded = 30 - words.length;
-                for (let i = 0; i < spacesNeeded; i++) {
-                    title.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; // Adds visible spaces
-                }
-            }
-        });
-    });
-}
 
 // End
 
 
 // works.js - Start
 
-if (document.querySelector('.works-section')) {
-
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     let newsTitles = document.querySelectorAll(".card-text");
-
-    //     newsTitles.forEach((title) => {
-    //         let words = title.innerText.trim().split(" ");
-
-    //         if (words.length > 200) {
-    //             // If more than 20 words, truncate and add "..."
-    //             title.innerText = words.slice(0, 200).join(" ") + "...";
-    //         } else {
-    //             // If less than 20 words, add non-breaking spaces (&nbsp;) for consistent height
-    //             let spacesNeeded = 200 - words.length;
-    //             for (let i = 0; i < spacesNeeded; i++) {
-    //                 title.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; // Adds visible spaces
-    //             }
-    //         }
-    //     });
-    // });
+if (
+    document.querySelector('.works-section') ||
+    document.querySelector('.news-section')
+) {
 
     document.addEventListener("DOMContentLoaded", function () {
         new Swiper(".swiper-container", {
@@ -256,39 +202,7 @@ if (document.querySelector('.works-section')) {
             }
         });
     });
-
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     const filterButtons = document.querySelectorAll(".filter-buttons .btn");
-
-    //     filterButtons.forEach(button => {
-    //         // Add hover effect
-    //         button.addEventListener("mouseenter", function () {
-    //             if (!this.classList.contains("btn-success")) {
-    //                 this.classList.replace("btn-outline-dark", "btn-success");
-    //             }
-    //         });
-
-    //         button.addEventListener("mouseleave", function () {
-    //             if (!this.classList.contains("active")) {
-    //                 this.classList.replace("btn-success", "btn-outline-dark");
-    //             }
-    //         });
-
-    //         // Click event to activate button
-    //         button.addEventListener("click", function () {
-    //             filterButtons.forEach(btn => {
-    //                 btn.classList.remove("active");
-    //                 btn.classList.replace("btn-success", "btn-outline-dark");
-    //             });
-
-    //             this.classList.add("active");
-    //             this.classList.replace("btn-outline-dark", "btn-success");
-    //         });
-    //     });
-    // });
 }
-
-
 
 // End
 
